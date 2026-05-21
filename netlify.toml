@@ -1,0 +1,3 @@
+[build]
+  publish = "publish_dashboard"
+  command = "echo No build needed"

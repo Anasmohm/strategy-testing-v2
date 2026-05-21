@@ -1,0 +1,33 @@
+ticker,behavior,failure_reason,current_entry_rule,proposed_entry_rule,current_lookback,proposed_lookback,current_target_pct,proposed_target_pct,current_stop_pct,proposed_stop_pct,trades,win_rate,avg_return,loss_count,proposed_change
+MSFT,trend_following,قلة إشارات التحقق,trend_pullback_resume,trend_pullback_resume,20,10,5.0,4.5,3.5,3.5,4,50.0,-0.1,2,استخدام pullback أقصر داخل الترند أو السماح بالدخول عند اختراق متوسط 20.
+TSLA,trend_following,نسبة فوز ضعيفة,trend_pullback_resume,avoid_or_half_size,20,20,10.27,8.22,7.28,6.19,12,25.0,-3.45,9,تقليل حجم الصفقة أو تجنب السهم حتى يظهر نمط أوضح.
+META,trend_following,نسبة فوز ضعيفة,trend_pullback_resume,five_day_drop_recovery,20,5,6.17,4.94,4.37,3.71,9,33.33,-1.83,5,تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.
+LLY,pullback_recovery,عدد خسائر مرتفع,five_day_drop_recovery,five_day_drop_recovery,5,5,4.81,4.81,4.0,4.8,14,50.0,0.15,7,استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.
+COST,trend_following,العائد المتوسط غير كاف,trend_pullback_resume,trend_pullback_resume,20,20,5.0,3.75,3.5,3.5,9,55.56,-0.1,3,تقليل الهدف وزيادة الاعتماد على الوقف المتحرك لجني أرباح أسرع.
+CRM,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.68,3.31,3.16,3.16,2,50.0,0.26,1,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+ADBE,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.46,3.11,2.96,2.96,0,0.0,0.0,0,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+AMD,trend_following,قلة إشارات التحقق,trend_pullback_resume,trend_pullback_resume,20,10,9.53,8.58,6.75,6.75,5,40.0,-0.24,3,استخدام pullback أقصر داخل الترند أو السماح بالدخول عند اختراق متوسط 20.
+TMO,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.16,3.0,2.71,2.71,6,33.33,-0.44,3,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+NOW,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.99,3.59,3.42,3.42,6,16.67,-1.11,3,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+INTU,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.51,3.16,3.01,3.01,4,50.0,0.78,1,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+ISRG,pullback_recovery,نسبة فوز ضعيفة,five_day_drop_recovery,five_day_drop_recovery,5,5,4.23,3.38,3.53,3.0,11,45.45,-0.57,5,تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.
+SNPS,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,4.26,3.83,3.65,3.65,3,66.67,1.62,1,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+PANW,pullback_recovery,عدد خسائر مرتفع,five_day_drop_recovery,five_day_drop_recovery,5,5,5.31,5.31,4.43,5.32,17,52.94,0.73,8,استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.
+CDNS,pullback_recovery,عدد خسائر مرتفع,five_day_drop_recovery,five_day_drop_recovery,5,5,5.0,5.0,4.17,5.0,13,53.85,0.29,5,استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.
+FTNT,pullback_recovery,نسبة فوز ضعيفة,five_day_drop_recovery,five_day_drop_recovery,5,5,5.02,4.02,4.19,3.56,12,41.67,-0.78,6,تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.
+MRVL,pullback_recovery,عدد خسائر مرتفع,five_day_drop_recovery,five_day_drop_recovery,5,5,7.69,7.69,6.4,7.68,22,50.0,0.95,9,استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.
+TEAM,breakout,عدد خسائر مرتفع,close_above_prior_high,close_above_prior_high,20,20,8.71,8.71,7.13,8.56,8,50.0,0.79,4,استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.
+DDOG,trend_following,قلة إشارات التحقق,trend_pullback_resume,trend_pullback_resume,20,10,8.47,7.62,6.0,6.0,7,57.14,2.27,3,استخدام pullback أقصر داخل الترند أو السماح بالدخول عند اختراق متوسط 20.
+TTD,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,5.35,4.81,4.58,4.58,5,40.0,0.15,2,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+HUBS,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,5.36,4.82,4.6,4.6,3,33.33,-1.28,2,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+ZS,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,4.75,4.28,4.07,4.07,4,50.0,0.34,2,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+NET,breakout,نسبة فوز ضعيفة,close_above_prior_high,avoid_or_half_size,20,20,8.98,7.18,7.34,6.24,16,37.5,-1.56,8,تقليل حجم الصفقة أو تجنب السهم حتى يظهر نمط أوضح.
+SNOW,mixed_or_choppy,نسبة فوز ضعيفة,reduced_size_breakout_only,avoid_or_half_size,100,100,5.1,4.08,4.37,3.71,8,37.5,-0.94,4,تقليل حجم الصفقة أو تجنب السهم حتى يظهر نمط أوضح.
+WDAY,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.91,3.52,3.35,3.35,2,0.0,-3.35,2,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+NKE,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.33,3.0,2.86,2.86,0,0.0,0.0,0,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+CAT,breakout,عدد خسائر مرتفع,close_above_prior_high,close_above_prior_high,55,55,5.15,5.15,4.21,5.05,13,53.85,1.11,5,استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.
+HON,pullback_recovery,قلة إشارات التحقق,five_day_drop_recovery,five_day_drop_recovery,5,5,4.0,3.6,3.0,3.0,5,20.0,-2.0,3,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+LIN,pullback_recovery,قلة إشارات التحقق,five_day_drop_recovery,five_day_drop_recovery,5,5,4.0,3.6,3.0,3.0,2,50.0,-0.85,1,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+REGN,mixed_or_choppy,قلة إشارات التحقق,reduced_size_breakout_only,reduced_size_breakout_only,100,50,3.61,3.25,3.1,3.1,5,60.0,0.93,2,توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.
+SHOP,trend_following,عدد خسائر مرتفع,trend_pullback_resume,trend_pullback_resume,20,20,9.5,9.5,6.73,8.08,12,50.0,1.38,6,استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.
+SPOT,trend_following,نسبة فوز ضعيفة,trend_pullback_resume,five_day_drop_recovery,20,5,8.14,6.51,5.76,4.9,13,46.15,0.55,6,تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.

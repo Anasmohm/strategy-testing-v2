@@ -1,0 +1,789 @@
+[2026-05-19 17:29:03] starting V2 update and publish
+[2026-05-19 17:29:05] market data refreshed: AMD through 2026-05-19
+[2026-05-19 17:29:06] market data refreshed: ANET through 2026-05-19
+[2026-05-19 17:29:08] market data refreshed: AVGO through 2026-05-19
+[2026-05-19 17:29:10] market data refreshed: LRCX through 2026-05-19
+[2026-05-19 17:29:11] market data refreshed: MRVL through 2026-05-19
+[2026-05-19 17:29:12] market data refreshed: NVDA through 2026-05-19
+[2026-05-19 17:29:14] market data refreshed: PANW through 2026-05-19
+[2026-05-19 17:29:15] market data refreshed: SHOP through 2026-05-19
+[2026-05-19 17:29:17] market data refreshed: TSLA through 2026-05-19
+[2026-05-19 17:29:17] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-19 17:29:23] Portfolio value: 109728.49
+Trades: 341
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-19 17:29:23] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-19 17:29:23] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-19 17:29:23] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-19 17:29:23] Access is denied.
+[2026-05-19 17:29:23] netlify deploy failed with exit code 1
+[2026-05-19 17:29:23] running netlify deploy: C:\Program Files\WindowsApps\OpenAI.Codex_26.513.4821.0_x64__2p2nqsd0c76g0\app\resources\node.EXE C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-19 17:29:23] netlify command permission error: [WinError 5] Access is denied
+[2026-05-19 17:29:59] starting V2 update and publish
+[2026-05-19 17:30:01] market data refreshed: AMD through 2026-05-19
+[2026-05-19 17:30:01] market data refreshed: ANET through 2026-05-19
+[2026-05-19 17:30:03] market data refreshed: AVGO through 2026-05-19
+[2026-05-19 17:30:04] market data refreshed: LRCX through 2026-05-19
+[2026-05-19 17:30:05] market data refreshed: MRVL through 2026-05-19
+[2026-05-19 17:30:07] market data refreshed: NVDA through 2026-05-19
+[2026-05-19 17:30:08] market data refreshed: PANW through 2026-05-19
+[2026-05-19 17:30:09] market data refreshed: SHOP through 2026-05-19
+[2026-05-19 17:30:11] market data refreshed: TSLA through 2026-05-19
+[2026-05-19 17:30:11] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-19 17:30:17] Portfolio value: 109673.10
+Trades: 341
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-19 17:30:17] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-19 17:30:17] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-19 17:30:17] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-19 17:30:17] Access is denied.
+[2026-05-19 17:30:17] netlify deploy failed with exit code 1
+[2026-05-19 17:30:17] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-19 17:30:30] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0c73b1758b026986c7dc7e
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 16ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 4.7s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0c73b1758b026986c7dc7e--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0c73b1758b026986c7dc7e>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-19 17:30:30] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 2 files
+[33mâ ‹[39m Uploading 2 files
+[32mâˆڑ[39m Finished uploading 2 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-19 17:30:30] finished V2 update and publish
+[2026-05-19 18:01:04] starting V2 update and publish
+[2026-05-19 18:01:06] market data refreshed: AMD through 2026-05-19
+[2026-05-19 18:01:07] market data refreshed: ANET through 2026-05-19
+[2026-05-19 18:01:08] market data refreshed: AVGO through 2026-05-19
+[2026-05-19 18:01:09] market data refreshed: LRCX through 2026-05-19
+[2026-05-19 18:01:11] market data refreshed: MRVL through 2026-05-19
+[2026-05-19 18:01:13] market data refreshed: NVDA through 2026-05-19
+[2026-05-19 18:01:14] market data refreshed: PANW through 2026-05-19
+[2026-05-19 18:01:16] market data refreshed: SHOP through 2026-05-19
+[2026-05-19 18:01:17] market data refreshed: TSLA through 2026-05-19
+[2026-05-19 18:01:17] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-19 18:01:22] Portfolio value: 1121745.66
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-19 18:01:22] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-19 18:01:22] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-19 18:01:22] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-19 18:01:22] Access is denied.
+[2026-05-19 18:01:23] netlify deploy failed with exit code 1
+[2026-05-19 18:01:23] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-19 18:01:33] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0c7af89ad158084cfd53f1
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 17ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 5s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0c7af89ad158084cfd53f1--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0c7af89ad158084cfd53f1>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-19 18:01:33] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 2 files
+[33mâ ‹[39m Uploading 2 files
+[32mâˆڑ[39m Finished uploading 2 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-19 18:01:33] finished V2 update and publish
+[2026-05-19 18:26:18] starting V2 update and publish
+[2026-05-19 18:26:19] market data refreshed: AMD through 2026-05-19
+[2026-05-19 18:26:20] market data refreshed: ANET through 2026-05-19
+[2026-05-19 18:26:21] market data refreshed: AVGO through 2026-05-19
+[2026-05-19 18:26:23] market data refreshed: LRCX through 2026-05-19
+[2026-05-19 18:26:24] market data refreshed: MRVL through 2026-05-19
+[2026-05-19 18:26:25] market data refreshed: NVDA through 2026-05-19
+[2026-05-19 18:26:27] market data refreshed: PANW through 2026-05-19
+[2026-05-19 18:26:28] market data refreshed: SHOP through 2026-05-19
+[2026-05-19 18:26:30] market data refreshed: TSLA through 2026-05-19
+[2026-05-19 18:26:30] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-19 18:26:36] Portfolio value: 110473.55
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-19 18:26:36] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-19 18:26:36] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-19 18:26:36] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-19 18:26:36] Access is denied.
+[2026-05-19 18:26:36] netlify deploy failed with exit code 1
+[2026-05-19 18:26:36] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-19 18:26:46] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0c80e1cf71b61a79a5a043
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 15ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 4.9s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0c80e1cf71b61a79a5a043--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0c80e1cf71b61a79a5a043>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-19 18:26:46] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 2 files
+[33mâ ‹[39m Uploading 2 files
+[32mâˆڑ[39m Finished uploading 2 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-19 18:26:46] finished V2 update and publish
+[2026-05-19 18:29:44] starting V2 update and publish
+[2026-05-19 18:29:46] market data refreshed: AMD through 2026-05-19
+[2026-05-19 18:29:48] market data refreshed: ANET through 2026-05-19
+[2026-05-19 18:29:49] market data refreshed: AVGO through 2026-05-19
+[2026-05-19 18:29:50] market data refreshed: LRCX through 2026-05-19
+[2026-05-19 18:29:52] market data refreshed: MRVL through 2026-05-19
+[2026-05-19 18:29:53] market data refreshed: NVDA through 2026-05-19
+[2026-05-19 18:29:54] market data refreshed: PANW through 2026-05-19
+[2026-05-19 18:29:55] market data refreshed: SHOP through 2026-05-19
+[2026-05-19 18:29:57] market data refreshed: TSLA through 2026-05-19
+[2026-05-19 18:29:57] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-19 18:30:09] Portfolio value: 335652.51
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-19 18:30:09] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-19 18:30:09] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-19 18:30:09] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-19 18:30:10] Access is denied.
+[2026-05-19 18:30:10] netlify deploy failed with exit code 1
+[2026-05-19 18:30:10] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-19 18:30:22] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0c81b98c3555223a063552
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 40ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 4.9s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0c81b98c3555223a063552--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0c81b98c3555223a063552>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-19 18:30:22] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 2 files
+[33mâ ‹[39m Uploading 2 files
+[32mâˆڑ[39m Finished uploading 2 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-19 18:30:22] finished V2 update and publish
+[2026-05-19 21:55:40] starting V2 update and publish
+[2026-05-19 21:55:41] market data refreshed: AMD through 2026-05-19
+[2026-05-19 21:55:41] market data refreshed: ANET through 2026-05-19
+[2026-05-19 21:55:42] market data refreshed: AVGO through 2026-05-19
+[2026-05-19 21:55:43] market data refreshed: LRCX through 2026-05-19
+[2026-05-19 21:55:44] market data refreshed: MRVL through 2026-05-19
+[2026-05-19 21:55:44] market data refreshed: NVDA through 2026-05-19
+[2026-05-19 21:55:45] market data refreshed: PANW through 2026-05-19
+[2026-05-19 21:55:46] market data refreshed: SHOP through 2026-05-19
+[2026-05-19 21:55:46] market data refreshed: TSLA through 2026-05-19
+[2026-05-19 21:55:47] market data refreshed: QQQ through 2026-05-19
+[2026-05-19 21:55:48] market data refreshed: SPY through 2026-05-19
+[2026-05-19 21:55:48] market data refreshed: SOXX through 2026-05-19
+[2026-05-19 21:55:48] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-19 21:55:57] Portfolio value: 338700.62
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-19 21:55:57] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-19 21:55:57] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-19 21:55:57] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-19 21:55:57] Access is denied.
+[2026-05-19 21:55:57] netlify deploy failed with exit code 1
+[2026-05-19 21:55:57] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-19 21:56:15] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0cb2495645e5cacc05c8ac
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 41ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 5s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0cb2495645e5cacc05c8ac--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0cb2495645e5cacc05c8ac>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-19 21:56:15] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 2 files
+[33mâ ‹[39m Uploading 2 files
+[32mâˆڑ[39m Finished uploading 2 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-19 21:56:15] finished V2 update and publish
+[2026-05-20 14:28:13] starting V2 update and publish
+[2026-05-20 14:28:15] market data refreshed: AMD through 2026-05-19
+[2026-05-20 14:28:16] market data refreshed: ANET through 2026-05-19
+[2026-05-20 14:28:18] market data refreshed: AVGO through 2026-05-19
+[2026-05-20 14:28:19] market data refreshed: LRCX through 2026-05-19
+[2026-05-20 14:28:20] market data refreshed: MRVL through 2026-05-19
+[2026-05-20 14:28:22] market data refreshed: NVDA through 2026-05-19
+[2026-05-20 14:28:24] market data refreshed: PANW through 2026-05-19
+[2026-05-20 14:28:26] market data refreshed: SHOP through 2026-05-19
+[2026-05-20 14:28:28] market data refreshed: TSLA through 2026-05-19
+[2026-05-20 14:28:30] market data refreshed: QQQ through 2026-05-19
+[2026-05-20 14:28:31] market data refreshed: SPY through 2026-05-19
+[2026-05-20 14:28:33] market data refreshed: SOXX through 2026-05-19
+[2026-05-20 14:28:33] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-20 14:28:53] Portfolio value: 9484.80
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-20 14:28:53] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-20 14:28:54] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-20 14:28:54] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-20 14:28:54] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-20 14:28:54] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-20 14:28:54] Access is denied.
+[2026-05-20 14:28:54] netlify deploy failed with exit code 1
+[2026-05-20 14:28:54] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-20 14:29:15] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0d9b04a0288400e9ce6bc0
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 76ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 5.7s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0d9b04a0288400e9ce6bc0--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0d9b04a0288400e9ce6bc0>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-20 14:29:15] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 3 files
+[33mâ ‹[39m Uploading 3 files
+[32mâˆڑ[39m Finished uploading 3 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-20 14:29:15] finished V2 update and publish
+[2026-05-20 14:33:58] starting V2 update and publish
+[2026-05-20 14:33:59] market data refreshed: AMD through 2026-05-19
+[2026-05-20 14:34:01] market data refreshed: ANET through 2026-05-19
+[2026-05-20 14:34:03] market data refreshed: AVGO through 2026-05-19
+[2026-05-20 14:34:05] market data refreshed: LRCX through 2026-05-19
+[2026-05-20 14:34:07] market data refreshed: MRVL through 2026-05-19
+[2026-05-20 14:34:09] market data refreshed: NVDA through 2026-05-19
+[2026-05-20 14:34:11] market data refreshed: PANW through 2026-05-19
+[2026-05-20 14:34:13] market data refreshed: SHOP through 2026-05-19
+[2026-05-20 14:34:15] market data refreshed: TSLA through 2026-05-19
+[2026-05-20 14:34:17] market data refreshed: QQQ through 2026-05-19
+[2026-05-20 14:34:19] market data refreshed: SPY through 2026-05-19
+[2026-05-20 14:34:21] market data refreshed: SOXX through 2026-05-19
+[2026-05-20 14:34:21] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-20 14:34:42] Portfolio value: 1133482.11
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-20 14:34:42] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-20 14:34:42] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-20 14:34:42] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-20 14:34:42] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-20 14:34:42] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-20 14:34:43] Access is denied.
+[2026-05-20 14:34:43] netlify deploy failed with exit code 1
+[2026-05-20 14:34:43] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-20 14:34:58] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0d9c5b745abe1225a505b1
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 72ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 6s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0d9c5b745abe1225a505b1--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0d9c5b745abe1225a505b1>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-20 14:34:58] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 3 files
+[33mâ ‹[39m Uploading 3 files
+[32mâˆڑ[39m Finished uploading 3 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-20 14:34:58] finished V2 update and publish
+[2026-05-20 15:09:50] starting V2 update and publish
+[2026-05-20 15:09:52] market data refreshed: AMD through 2026-05-19
+[2026-05-20 15:09:54] market data refreshed: ANET through 2026-05-19
+[2026-05-20 15:09:56] market data refreshed: AVGO through 2026-05-19
+[2026-05-20 15:09:57] market data refreshed: LRCX through 2026-05-19
+[2026-05-20 15:09:59] market data refreshed: MRVL through 2026-05-19
+[2026-05-20 15:10:01] market data refreshed: NVDA through 2026-05-19
+[2026-05-20 15:10:02] market data refreshed: PANW through 2026-05-19
+[2026-05-20 15:10:03] market data refreshed: SHOP through 2026-05-19
+[2026-05-20 15:10:05] market data refreshed: TSLA through 2026-05-19
+[2026-05-20 15:10:06] market data refreshed: QQQ through 2026-05-19
+[2026-05-20 15:10:08] market data refreshed: SPY through 2026-05-19
+[2026-05-20 15:10:09] market data refreshed: SOXX through 2026-05-19
+[2026-05-20 15:10:09] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-20 15:10:19] Portfolio value: 111649.31
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-20 15:10:19] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-20 15:10:19] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-20 15:10:19] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-20 15:10:19] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-20 15:10:19] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-20 15:10:19] Access is denied.
+[2026-05-20 15:10:19] netlify deploy failed with exit code 1
+[2026-05-20 15:10:19] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-20 15:10:31] â€‹
+Netlify Build                                                 
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+> Version
+  @netlify/build 35.13.6
+â€‹
+> Flags
+  accountId: 6a0b2c1d5225b6479708b7a6
+  deployId: 6a0da4b19559cf21a327a269
+â€‹
+> Current directory
+  C:\Users\anasbinessa\Documents\Strategy Testing V2
+â€‹
+> Config file
+  C:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+â€‹
+> Context
+  production
+â€‹
+build.command from netlify.toml                               
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+$ echo No build needed
+No build needed
+â€‹
+(build.command completed in 38ms)
+
+Deploying to Netlify
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+[32mDeploy path: [39m       C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[32mConfiguration path: [39mC:\Users\anasbinessa\Documents\Strategy Testing V2\netlify.toml
+
+â€‹
+Netlify Build Complete                                        
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+â€‹
+(Netlify Build completed in 5.5s)
+
+ًںڑ€ Deploy complete
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+Production URL: <https://incredible-snickerdoodle-eb6b8c.netlify.app>
+Unique deploy URL: <https://6a0da4b19559cf21a327a269--incredible-snickerdoodle-eb6b8c.netlify.app>
+
+Build logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/deploys/6a0da4b19559cf21a327a269>
+Function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/functions>
+Edge function logs: <https://app.netlify.com/projects/incredible-snickerdoodle-eb6b8c/logs/edge-functions>
+[2026-05-20 15:10:31] [33mâ ‹[39m Uploading blobs to deploy store...
+
+[32mâˆڑ[39m Finished uploading blobs to deploy store
+[33mâ ‹[39m Hashing files...
+[33mâ ‹[39m Looking for a functions cache...
+[32mâˆڑ[39m No cached functions were found
+[32mâˆڑ[39m Finished hashing 
+[33mâ ‹[39m CDN diffing files...
+[32mâˆڑ[39m CDN requesting 3 files
+[33mâ ‹[39m Uploading 3 files
+[32mâˆڑ[39m Finished uploading 3 assets
+[33mâ ‹[39m Waiting for deploy to go live...
+[32mâˆڑ[39m Deploy is live!
+[2026-05-20 15:10:31] finished V2 update and publish
+[2026-05-20 16:03:40] starting V2 GitHub Pages update
+[2026-05-20 16:03:42] market data refreshed: AMD through 2026-05-19
+[2026-05-20 16:03:44] market data refreshed: ANET through 2026-05-19
+[2026-05-20 16:03:45] market data refreshed: AVGO through 2026-05-19
+[2026-05-20 16:03:46] market data refreshed: LRCX through 2026-05-19
+[2026-05-20 16:03:49] market data refreshed: MRVL through 2026-05-19
+[2026-05-20 16:03:50] market data refreshed: NVDA through 2026-05-19
+[2026-05-20 16:03:53] market data refreshed: PANW through 2026-05-19
+[2026-05-20 16:03:55] market data refreshed: SHOP through 2026-05-19
+[2026-05-20 16:03:57] market data refreshed: TSLA through 2026-05-19
+[2026-05-20 16:03:58] market data refreshed: QQQ through 2026-05-19
+[2026-05-20 16:03:59] market data refreshed: SPY through 2026-05-19
+[2026-05-20 16:04:01] market data refreshed: SOXX through 2026-05-19
+[2026-05-20 16:04:01] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-20 16:04:22] Portfolio value: 111649.31
+Shadow stop value: 99240.00
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-20 16:04:22] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-20 16:04:22] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-20 16:04:22] running prepare GitHub Pages: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_github_pages.py
+[2026-05-20 16:04:22] Prepared GitHub Pages folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-20 16:04:22] finished V2 GitHub Pages update
+[2026-05-20 16:06:11] starting V2 update and publish
+[2026-05-20 16:06:13] market data refreshed: AMD through 2026-05-19
+[2026-05-20 16:06:14] market data refreshed: ANET through 2026-05-19
+[2026-05-20 16:06:16] market data refreshed: AVGO through 2026-05-19
+[2026-05-20 16:06:18] market data refreshed: LRCX through 2026-05-19
+[2026-05-20 16:06:21] market data refreshed: MRVL through 2026-05-19
+[2026-05-20 16:06:22] market data refreshed: NVDA through 2026-05-19
+[2026-05-20 16:06:24] market data refreshed: PANW through 2026-05-19
+[2026-05-20 16:06:26] market data refreshed: SHOP through 2026-05-19
+[2026-05-20 16:06:27] market data refreshed: TSLA through 2026-05-19
+[2026-05-20 16:06:29] market data refreshed: QQQ through 2026-05-19
+[2026-05-20 16:06:30] market data refreshed: SPY through 2026-05-19
+[2026-05-20 16:06:32] market data refreshed: SOXX through 2026-05-19
+[2026-05-20 16:06:32] running build dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-20 16:07:03] Portfolio value: 111649.31
+Shadow stop value: 99240.00
+Trades: 340
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-20 16:07:03] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-20 16:07:04] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-20 16:07:04] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-20 16:07:04] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-20 16:07:04] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-20 16:07:04] Access is denied.
+[2026-05-20 16:07:04] netlify deploy failed with exit code 1
+[2026-05-20 16:07:04] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-20 16:07:13] آ»   JSONHTTPError: Forbidden
+[2026-05-20 16:07:13] netlify deploy failed with exit code 1
+[2026-05-20 16:07:13] running netlify deploy: C:\Program Files\WindowsApps\OpenAI.Codex_26.513.4821.0_x64__2p2nqsd0c76g0\app\resources\node.EXE C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-20 16:07:13] netlify command permission error: [WinError 5] Access is denied

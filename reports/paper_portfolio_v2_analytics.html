@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="300">
+  <title>تحليلات محفظة V2</title>
+  <style>
+    :root { --bg:#f5f7f9; --panel:#fff; --ink:#17212b; --muted:#65717d; --line:#d9e1e8; --blue:#1d5f8f; --green:#176b4d; --red:#a33a3a; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:"Segoe UI", Tahoma, Arial, sans-serif; }
+    main { max-width:1260px; margin:0 auto; padding:28px; }
+    header { display:flex; justify-content:space-between; align-items:end; gap:16px; margin-bottom:18px; }
+    h1 { margin:0 0 4px; font-size:28px; }
+    h2 { margin:26px 0 12px; font-size:18px; }
+    .sub { color:var(--muted); font-size:14px; }
+    .header-actions { display:flex; gap:8px; flex-wrap:wrap; }
+    .back { border:1px solid var(--line); background:#eef3f7; color:var(--blue); border-radius:8px; padding:9px 12px; text-decoration:none; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; margin:14px 0; }
+    .card, table, .notes, .news-card { background:var(--panel); border:1px solid var(--line); border-radius:8px; }
+    .card { padding:14px; }
+    .card span { display:block; color:var(--muted); font-size:13px; }
+    .card strong { display:block; margin-top:4px; font-size:22px; }
+    .card small { display:block; margin-top:4px; color:var(--muted); font-size:12px; }
+    .positive { color:var(--green); }
+    .negative { color:var(--red); }
+    .notes { padding:14px 18px; margin:14px 0; }
+    .notes li { margin:7px 0; }
+    table { width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; }
+    th,td { border-bottom:1px solid var(--line); padding:10px 12px; text-align:right; font-size:13px; vertical-align:top; }
+    th { background:#eaf0f5; color:#33404b; }
+    tr:last-child td { border-bottom:0; }
+    .num { direction:ltr; unicode-bidi:isolate; display:inline-block; }
+    .grid-two { display:grid; grid-template-columns:repeat(auto-fit,minmax(420px,1fr)); gap:14px; align-items:start; }
+    .news-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:10px; }
+    .news-card { padding:14px; }
+    .news-card h3 { margin:0 0 8px; font-size:20px; }
+    .news-card p { margin:10px 0 0; color:var(--muted); font-size:13px; }
+    .search-pills { display:flex; flex-wrap:wrap; gap:6px; }
+    .pill { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:5px 9px; background:#eef3f7; color:var(--blue); text-decoration:none; font-size:12px; }
+    @media (max-width:850px) { main { padding:18px; } header { display:block; } table { display:block; overflow-x:auto; white-space:nowrap; } .grid-two { display:block; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>تحليلات محفظة V2</h1>
+        <div class="sub">صفحة مشتقة من صفقات ومنحنى محفظة V2. آخر تحديث: 2026-05-20 16:07:03</div>
+      </div>
+      <a class="back" href="paper_portfolio_v2_dashboard.html">العودة للداشبورد</a>
+    </header>
+    <section class="cards">
+      <article class="card"><span>قيمة المحفظة</span><strong><span class="num">$111,649.31</span></strong></article>
+      <article class="card"><span>عائد الفترة الكلي</span><strong class="positive"><span class="num">1016.49%</span></strong></article>
+      <article class="card"><span>الربح / الخسارة</span><strong class="positive"><span class="num">$101,649.31</span></strong></article>
+      <article class="card"><span>معامل الربح</span><strong><span class="num">4.91</span></strong></article>
+      <article class="card"><span>السحب الأقصى</span><strong class="negative"><span class="num">-9.95%</span></strong></article>
+      <article class="card"><span>أفضل سهم</span><strong>AMD</strong></article>
+      <article class="card"><span>أفضل سلوك</span><strong>v1_success_swing</strong></article>
+      <article class="card"><span>أفضل قاعدة دخول</span><strong>v1_breakout</strong></article>
+      <article class="card"><span>أفضل شهر صفقات</span><strong>2026-04</strong></article>
+      <article class="card"><span>أسوأ شهر صفقات</span><strong>2025-02</strong></article>
+    </section>
+    <h2>حالة السوق وسلة الأسهم</h2>
+    <section class="cards">
+      <article class="card"><span>حالة السوق</span><strong class="positive">داعم</strong></article>
+      <article class="card"><span>الأسهم الصاعدة من السلة</span><strong>6 / 9</strong></article>
+      <article class="card"><span>فوق متوسط 200 يوم</span><strong>7 / 9</strong></article>
+      <article class="card"><span>متوسط عائد السلة 20 يوم</span><strong class="positive"><span class="num">9.02%</span></strong></article>
+      <article class="card"><span>أقوى سهم 20 يوم</span><strong>AMD</strong><small>45.54%</small></article>
+      <article class="card"><span>أضعف سهم 20 يوم</span><strong>SHOP</strong><small>-22.97%</small></article>
+    </section>
+    <div class="grid-two">
+      <section>
+        <h2>المؤشرات المرجعية</h2>
+        <table><thead><tr><th>الرمز</th><th>الاسم</th><th>الاتجاه</th><th>آخر سعر</th><th>فوق 50</th><th>فوق 200</th><th>20 يوم</th><th>60 يوم</th><th>الحجم</th><th>آخر بيانات</th></tr></thead><tbody><tr><td>QQQ</td><td>ناسداك 100</td><td class='positive'>صاعد</td><td><span class="num">$701.53</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">8.88%</span></td><td><span class="positive num">16.65%</span></td><td><span class='num'>1.17x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>SPY</td><td>S&amp;P 500</td><td class='positive'>صاعد</td><td><span class="num">$733.73</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">4.21%</span></td><td><span class="positive num">7.52%</span></td><td><span class='num'>1.12x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>SOXX</td><td>أشباه الموصلات</td><td class='positive'>صاعد</td><td><span class="num">$496.74</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">18.07%</span></td><td><span class="positive num">39.21%</span></td><td><span class='num'>1.53x</span> مرتفع</td><td>2026-05-19</td></tr></tbody></table>
+      </section>
+      <section>
+        <h2>سلة الأسهم التسعة</h2>
+        <table><thead><tr><th>الرمز</th><th>الاسم</th><th>الاتجاه</th><th>آخر سعر</th><th>فوق 50</th><th>فوق 200</th><th>20 يوم</th><th>60 يوم</th><th>الحجم</th><th>آخر بيانات</th></tr></thead><tbody><tr><td>AMD</td><td>AMD</td><td class='positive'>صاعد</td><td><span class="num">$414.05</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">45.54%</span></td><td><span class="positive num">110.61%</span></td><td><span class='num'>0.83x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>ANET</td><td>ANET</td><td class=''>محايد</td><td><span class="num">$141.58</span></td><td>لا</td><td>نعم</td><td><span class="negative num">-18.10%</span></td><td><span class="positive num">11.10%</span></td><td><span class='num'>0.72x</span> منخفض</td><td>2026-05-19</td></tr>
+<tr><td>AVGO</td><td>AVGO</td><td class='positive'>صاعد</td><td><span class="num">$411.07</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">2.21%</span></td><td><span class="positive num">24.44%</span></td><td><span class='num'>1.07x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>LRCX</td><td>LRCX</td><td class='positive'>صاعد</td><td><span class="num">$273.38</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">5.81%</span></td><td><span class="positive num">12.84%</span></td><td><span class='num'>0.86x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>MRVL</td><td>MRVL</td><td class='positive'>صاعد</td><td><span class="num">$176.27</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">16.50%</span></td><td><span class="positive num">126.60%</span></td><td><span class='num'>0.98x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>NVDA</td><td>NVDA</td><td class='positive'>صاعد</td><td><span class="num">$220.61</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">10.37%</span></td><td><span class="positive num">15.17%</span></td><td><span class='num'>0.91x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>PANW</td><td>PANW</td><td class='positive'>صاعد</td><td><span class="num">$240.13</span></td><td>نعم</td><td>نعم</td><td><span class="positive num">37.25%</span></td><td><span class="positive num">66.59%</span></td><td><span class='num'>1.48x</span> مرتفع</td><td>2026-05-19</td></tr>
+<tr><td>SHOP</td><td>SHOP</td><td class='negative'>هابط</td><td><span class="num">$101.01</span></td><td>لا</td><td>لا</td><td><span class="negative num">-22.97%</span></td><td><span class="negative num">-13.87%</span></td><td><span class='num'>0.88x</span> طبيعي</td><td>2026-05-19</td></tr>
+<tr><td>TSLA</td><td>TSLA</td><td class=''>محايد</td><td><span class="num">$404.11</span></td><td>نعم</td><td>لا</td><td><span class="positive num">4.58%</span></td><td><span class="positive num">1.07%</span></td><td><span class='num'>0.78x</span> منخفض</td><td>2026-05-19</td></tr></tbody></table>
+      </section>
+    </div>
+    <section class="notes">
+      <strong>قراءة تنفيذية</strong>
+      <ul><li>الأقوى حاليا حسب السلوك هو v1_success_swing بربح 64,596.24 دولار ونسبة فوز 86.57%.</li><li>السيولة لا تبدو عائقا بالحجم الحالي؛ يمكن اختبار رفع حد الصفقة تدريجيا بشرط مراقبة السحب الأقصى.</li></ul>
+    </section>
+    <section class="cards">
+      <article class="card"><span>متوسط استخدام حد السيولة</span><strong><span class="num">0.04%</span></strong></article>
+      <article class="card"><span>صفقات حدتها السيولة</span><strong>0</strong></article>
+      <article class="card"><span>قمة السحب</span><strong>2025-01-31</strong></article>
+      <article class="card"><span>قاع السحب</span><strong>2025-03-10</strong></article>
+    </section>
+    <div class="grid-two">
+      <section>
+        <h2>عائد السنوات من منحنى المحفظة</h2>
+        <table><thead><tr><th>الفترة</th><th>رصيد الافتتاح</th><th>رصيد الإغلاق</th><th>الربح</th><th>العائد</th></tr></thead><tbody><tr><td>2024</td><td><span class="num">$10,000.00</span></td><td><span class="num">$27,000.03</span></td><td><span class="num">$17,000.03</span></td><td><span class='num'>170.00%</span></td></tr>
+<tr><td>2025</td><td><span class="num">$27,000.03</span></td><td><span class="num">$61,501.08</span></td><td><span class="num">$34,501.05</span></td><td><span class='num'>127.78%</span></td></tr>
+<tr><td>2026</td><td><span class="num">$61,501.08</span></td><td><span class="num">$111,649.31</span></td><td><span class="num">$50,148.23</span></td><td><span class='num'>81.54%</span></td></tr></tbody></table>
+      </section>
+      <section>
+        <h2>أفضل الأشهر من منحنى المحفظة</h2>
+        <table><thead><tr><th>الفترة</th><th>رصيد الافتتاح</th><th>رصيد الإغلاق</th><th>الربح</th><th>العائد</th></tr></thead><tbody><tr><td>2026-04</td><td><span class="num">$72,516.59</span></td><td><span class="num">$98,611.92</span></td><td><span class="num">$26,095.33</span></td><td><span class='num'>35.99%</span></td></tr>
+<tr><td>2026-05</td><td><span class="num">$98,611.92</span></td><td><span class="num">$111,649.31</span></td><td><span class="num">$13,037.39</span></td><td><span class='num'>13.22%</span></td></tr>
+<tr><td>2025-10</td><td><span class="num">$46,940.53</span></td><td><span class="num">$56,480.87</span></td><td><span class="num">$9,540.34</span></td><td><span class='num'>20.32%</span></td></tr>
+<tr><td>2026-02</td><td><span class="num">$63,913.15</span></td><td><span class="num">$70,804.06</span></td><td><span class="num">$6,890.91</span></td><td><span class='num'>10.78%</span></td></tr>
+<tr><td>2025-04</td><td><span class="num">$29,456.77</span></td><td><span class="num">$34,228.38</span></td><td><span class="num">$4,771.61</span></td><td><span class='num'>16.20%</span></td></tr>
+<tr><td>2025-07</td><td><span class="num">$37,709.34</span></td><td><span class="num">$42,406.62</span></td><td><span class="num">$4,697.28</span></td><td><span class='num'>12.46%</span></td></tr>
+<tr><td>2025-09</td><td><span class="num">$42,715.99</span></td><td><span class="num">$46,940.53</span></td><td><span class="num">$4,224.54</span></td><td><span class='num'>9.89%</span></td></tr>
+<tr><td>2025-12</td><td><span class="num">$57,988.15</span></td><td><span class="num">$61,501.08</span></td><td><span class="num">$3,512.93</span></td><td><span class='num'>6.06%</span></td></tr>
+<tr><td>2024-07</td><td><span class="num">$17,715.17</span></td><td><span class="num">$20,800.07</span></td><td><span class="num">$3,084.90</span></td><td><span class='num'>17.41%</span></td></tr>
+<tr><td>2024-12</td><td><span class="num">$24,237.80</span></td><td><span class="num">$27,000.03</span></td><td><span class="num">$2,762.23</span></td><td><span class='num'>11.40%</span></td></tr>
+<tr><td>2025-01</td><td><span class="num">$27,000.03</span></td><td><span class="num">$29,509.80</span></td><td><span class="num">$2,509.77</span></td><td><span class='num'>9.30%</span></td></tr>
+<tr><td>2026-01</td><td><span class="num">$61,501.08</span></td><td><span class="num">$63,913.15</span></td><td><span class="num">$2,412.07</span></td><td><span class='num'>3.92%</span></td></tr></tbody></table>
+      </section>
+    </div>
+    <h2>الأسهم الأعلى ربحية</h2>
+    <table><thead><tr><th>السهم</th><th>الصفقات</th><th>مفتوحة</th><th>مغلقة</th><th>رابحة</th><th>خاسرة</th><th>نسبة الفوز</th><th>الربح</th><th>متوسط الصفقة</th></tr></thead><tbody><tr><td>AMD</td><td>56</td><td>0</td><td>56</td><td>48</td><td>8</td><td><span class='num'>85.71%</span></td><td><span class="num">$27,429.84</span></td><td><span class="num">$489.82</span></td></tr>
+<tr><td>NVDA</td><td>60</td><td>1</td><td>59</td><td>58</td><td>1</td><td><span class='num'>98.31%</span></td><td><span class="num">$13,613.68</span></td><td><span class="num">$226.89</span></td></tr>
+<tr><td>MRVL</td><td>34</td><td>1</td><td>33</td><td>31</td><td>2</td><td><span class='num'>93.94%</span></td><td><span class="num">$13,372.92</span></td><td><span class="num">$393.32</span></td></tr>
+<tr><td>AVGO</td><td>51</td><td>0</td><td>51</td><td>40</td><td>11</td><td><span class='num'>78.43%</span></td><td><span class="num">$12,260.62</span></td><td><span class="num">$240.40</span></td></tr>
+<tr><td>TSLA</td><td>30</td><td>0</td><td>30</td><td>29</td><td>1</td><td><span class='num'>96.67%</span></td><td><span class="num">$11,402.00</span></td><td><span class="num">$380.07</span></td></tr>
+<tr><td>ANET</td><td>36</td><td>2</td><td>34</td><td>30</td><td>4</td><td><span class='num'>88.24%</span></td><td><span class="num">$7,577.74</span></td><td><span class="num">$210.49</span></td></tr>
+<tr><td>SHOP</td><td>22</td><td>0</td><td>22</td><td>19</td><td>3</td><td><span class='num'>86.36%</span></td><td><span class="num">$6,580.22</span></td><td><span class="num">$299.10</span></td></tr>
+<tr><td>LRCX</td><td>39</td><td>0</td><td>39</td><td>33</td><td>6</td><td><span class='num'>84.62%</span></td><td><span class="num">$5,693.66</span></td><td><span class="num">$145.99</span></td></tr>
+<tr><td>PANW</td><td>12</td><td>0</td><td>12</td><td>12</td><td>0</td><td><span class='num'>100.00%</span></td><td><span class="num">$3,718.65</span></td><td><span class="num">$309.89</span></td></tr></tbody></table>
+    <h2>السلوكيات / الأطر الأكثر تميزا</h2>
+    <table><thead><tr><th>السلوك</th><th>الصفقات</th><th>مفتوحة</th><th>مغلقة</th><th>رابحة</th><th>خاسرة</th><th>نسبة الفوز</th><th>الربح</th><th>متوسط الصفقة</th></tr></thead><tbody><tr><td>v1_success_swing</td><td>202</td><td>1</td><td>201</td><td>174</td><td>27</td><td><span class='num'>86.57%</span></td><td><span class="num">$64,596.24</span></td><td><span class="num">$319.78</span></td></tr>
+<tr><td>v1_success_monthly</td><td>138</td><td>3</td><td>135</td><td>126</td><td>9</td><td><span class='num'>93.33%</span></td><td><span class="num">$37,053.09</span></td><td><span class="num">$268.50</span></td></tr></tbody></table>
+    <h2>قواعد الدخول الأكثر تميزا</h2>
+    <table><thead><tr><th>قاعدة الدخول</th><th>الصفقات</th><th>مفتوحة</th><th>مغلقة</th><th>رابحة</th><th>خاسرة</th><th>نسبة الفوز</th><th>الربح</th><th>متوسط الصفقة</th></tr></thead><tbody><tr><td>v1_breakout</td><td>172</td><td>2</td><td>170</td><td>158</td><td>12</td><td><span class='num'>92.94%</span></td><td><span class="num">$62,413.07</span></td><td><span class="num">$362.87</span></td></tr>
+<tr><td>v1_rsi_recovery</td><td>168</td><td>2</td><td>166</td><td>142</td><td>24</td><td><span class='num'>85.54%</span></td><td><span class="num">$39,236.26</span></td><td><span class="num">$233.55</span></td></tr></tbody></table>
+    <h2>أداء النسخ</h2>
+    <table><thead><tr><th>النسخة</th><th>الصفقات</th><th>مفتوحة</th><th>مغلقة</th><th>رابحة</th><th>خاسرة</th><th>نسبة الفوز</th><th>الربح</th><th>متوسط الصفقة</th></tr></thead><tbody><tr><td>v2_from_v1_success</td><td>340</td><td>4</td><td>336</td><td>300</td><td>36</td><td><span class='num'>89.29%</span></td><td><span class="num">$101,649.33</span></td><td><span class="num">$298.97</span></td></tr></tbody></table>
+    <h2>أعلى الأشهر ربحية حسب الصفقات</h2>
+    <table><thead><tr><th>الشهر</th><th>الصفقات</th><th>رابحة</th><th>خاسرة</th><th>الربح</th><th>أبرز الأسهم</th></tr></thead><tbody><tr><td>2026-04</td><td>31</td><td>28</td><td>3</td><td><span class="num">$25,652.03</span></td><td>MRVL, AMD, ANET</td></tr>
+<tr><td>2026-05</td><td>15</td><td>9</td><td>2</td><td><span class="num">$12,015.77</span></td><td>AMD, TSLA, MRVL</td></tr>
+<tr><td>2025-10</td><td>17</td><td>17</td><td>0</td><td><span class="num">$10,123.17</span></td><td>AMD, NVDA, AVGO</td></tr>
+<tr><td>2026-02</td><td>7</td><td>7</td><td>0</td><td><span class="num">$6,890.92</span></td><td>AVGO, SHOP, LRCX</td></tr>
+<tr><td>2025-04</td><td>12</td><td>10</td><td>2</td><td><span class="num">$4,771.61</span></td><td>AVGO, SHOP, PANW</td></tr>
+<tr><td>2025-09</td><td>8</td><td>8</td><td>0</td><td><span class="num">$4,597.70</span></td><td>TSLA, NVDA, SHOP</td></tr>
+<tr><td>2025-07</td><td>15</td><td>15</td><td>0</td><td><span class="num">$4,420.36</span></td><td>NVDA, AMD, MRVL</td></tr>
+<tr><td>2025-12</td><td>12</td><td>12</td><td>0</td><td><span class="num">$4,359.63</span></td><td>NVDA, ANET, TSLA</td></tr>
+<tr><td>2026-03</td><td>15</td><td>13</td><td>2</td><td><span class="num">$3,177.45</span></td><td>AVGO, ANET, PANW</td></tr>
+<tr><td>2024-12</td><td>16</td><td>15</td><td>1</td><td><span class="num">$2,690.60</span></td><td>TSLA, LRCX, AVGO</td></tr>
+<tr><td>2025-01</td><td>8</td><td>7</td><td>1</td><td><span class="num">$2,294.52</span></td><td>AVGO, ANET, LRCX</td></tr>
+<tr><td>2025-06</td><td>11</td><td>10</td><td>1</td><td><span class="num">$2,134.56</span></td><td>NVDA, SHOP, LRCX</td></tr>
+<tr><td>2024-07</td><td>18</td><td>16</td><td>2</td><td><span class="num">$1,983.82</span></td><td>TSLA, AMD, ANET</td></tr>
+<tr><td>2024-03</td><td>15</td><td>13</td><td>2</td><td><span class="num">$1,775.64</span></td><td>NVDA, AVGO, AMD</td></tr>
+<tr><td>2024-09</td><td>9</td><td>8</td><td>1</td><td><span class="num">$1,716.09</span></td><td>AVGO, AMD, SHOP</td></tr>
+<tr><td>2025-05</td><td>7</td><td>6</td><td>1</td><td><span class="num">$1,623.33</span></td><td>AMD, TSLA, LRCX</td></tr>
+<tr><td>2026-01</td><td>8</td><td>7</td><td>1</td><td><span class="num">$1,565.37</span></td><td>AVGO, ANET, AMD</td></tr>
+<tr><td>2024-08</td><td>7</td><td>6</td><td>1</td><td><span class="num">$1,564.22</span></td><td>SHOP, NVDA, LRCX</td></tr>
+<tr><td>2024-06</td><td>9</td><td>9</td><td>0</td><td><span class="num">$1,548.22</span></td><td>NVDA, ANET, AVGO</td></tr>
+<tr><td>2024-01</td><td>19</td><td>19</td><td>0</td><td><span class="num">$1,538.83</span></td><td>NVDA, AMD, MRVL</td></tr>
+<tr><td>2024-11</td><td>15</td><td>12</td><td>3</td><td><span class="num">$1,521.77</span></td><td>TSLA, NVDA, LRCX</td></tr>
+<tr><td>2024-02</td><td>11</td><td>11</td><td>0</td><td><span class="num">$1,470.80</span></td><td>NVDA, PANW, AMD</td></tr>
+<tr><td>2024-05</td><td>7</td><td>7</td><td>0</td><td><span class="num">$1,337.63</span></td><td>NVDA, ANET, AMD</td></tr>
+<tr><td>2025-03</td><td>9</td><td>7</td><td>2</td><td><span class="num">$1,030.09</span></td><td>SHOP, ANET, AMD</td></tr>
+<tr><td>2025-11</td><td>6</td><td>4</td><td>2</td><td><span class="num">$551.29</span></td><td>LRCX, ANET, SHOP</td></tr>
+<tr><td>2025-08</td><td>7</td><td>6</td><td>1</td><td><span class="num">$309.37</span></td><td>LRCX, PANW, SHOP</td></tr>
+<tr><td>2024-04</td><td>11</td><td>7</td><td>4</td><td><span class="num">$44.05</span></td><td>NVDA, AVGO, ANET</td></tr>
+<tr><td>2024-10</td><td>12</td><td>9</td><td>3</td><td><span class="num">$23.61</span></td><td>MRVL, LRCX, NVDA</td></tr>
+<tr><td>2025-02</td><td>3</td><td>2</td><td>1</td><td><span class="num">$-1,083.12</span></td><td>AVGO, ANET</td></tr></tbody></table>
+    <h2>روابط أخبار مرتبطة بالأسهم الرابحة</h2><section class='news-grid'><article class='news-card'><h3>AMD</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202026-04%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202026-05%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-05</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202025-10%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2025-10</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202026-02%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-02</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>NVDA</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202026-04%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202026-05%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-05</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202025-10%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2025-10</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202026-02%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-02</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>MRVL</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=MRVL%20stock%20news%202026-04%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=MRVL%20stock%20news%202026-05%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-05</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=MRVL%20stock%20news%202025-10%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2025-10</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=MRVL%20stock%20news%202026-02%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-02</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>AVGO</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202026-04%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202026-05%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-05</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202025-10%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2025-10</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202026-02%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-02</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>TSLA</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=TSLA%20stock%20news%202026-04%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=TSLA%20stock%20news%202026-05%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-05</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=TSLA%20stock%20news%202025-10%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2025-10</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=TSLA%20stock%20news%202026-02%20profit%20rally%20breakout%20earnings%20AI%20semiconductors%20market'>أخبار 2026-02</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article></section>
+    <h2>روابط أخبار مرتبطة بالأسهم الخاسرة</h2><section class='news-grid'><article class='news-card'><h3>AMD</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202024-03%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-03</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202024-04%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202024-07%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-07</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AMD%20stock%20news%202024-08%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-08</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>AVGO</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202024-03%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-03</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202024-04%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202024-07%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-07</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=AVGO%20stock%20news%202024-08%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-08</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>LRCX</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=LRCX%20stock%20news%202024-03%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-03</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=LRCX%20stock%20news%202024-04%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=LRCX%20stock%20news%202024-07%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-07</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=LRCX%20stock%20news%202024-08%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-08</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>NVDA</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202024-03%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-03</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202024-04%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202024-07%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-07</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=NVDA%20stock%20news%202024-08%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-08</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article><article class='news-card'><h3>ANET</h3><div class='search-pills'><a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=ANET%20stock%20news%202024-03%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-03</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=ANET%20stock%20news%202024-04%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-04</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=ANET%20stock%20news%202024-07%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-07</a> <a class='pill' target='_blank' href='https://www.google.com/search?tbm=nws&q=ANET%20stock%20news%202024-08%20loss%20drop%20selloff%20earnings%20AI%20semiconductors%20market'>أخبار 2024-08</a></div><p>روابط بحث أخبار جاهزة لنفس شهر الربح/الخسارة. استخدمها لتفسير الحركة، وليست جزءا من حساب المحاكاة.</p></article></section>
+  </main>
+</body>
+</html>

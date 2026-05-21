@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>اختبار الاستراتيجيات - النسخة الثانية</title>
+  <style>
+    :root {
+      --bg: #f5f7f9;
+      --panel: #fff;
+      --ink: #17212b;
+      --muted: #65717d;
+      --line: #d9e1e8;
+      --blue: #1d5f8f;
+      --green: #176b4d;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", Tahoma, Arial, sans-serif; }
+    main { max-width: 1260px; margin: 0 auto; padding: 28px; }
+    header { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 18px; }
+    h1 { margin: 0 0 4px; font-size: 28px; letter-spacing: 0; }
+    h2 { margin: 0 0 12px; font-size: 18px; }
+    .sub { color: var(--muted); font-size: 14px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-bottom: 14px; }
+    .card, .panel, table { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+    .card { padding: 14px; }
+    .card span { display: block; color: var(--muted); font-size: 13px; }
+    .card strong { display: block; margin-top: 4px; font-size: 24px; }
+    .card small { display: block; margin-top: 5px; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin: 14px 0; }
+    .panel { padding: 14px; }
+    .ranked { list-style: none; padding: 0; margin: 0; }
+    .ranked li { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding: 8px 0; }
+    .ranked li:last-child { border-bottom: 0; }
+    .compact { margin: 0 0 12px; }
+    .pill, .status { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 9px; font-size: 12px; border: 1px solid var(--line); background: #f3f7fa; }
+    .detail-parts { display: flex; flex-wrap: wrap; gap: 6px; align-items: flex-start; }
+    .detail-chip { display: inline-flex; align-items: center; min-height: 26px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px; background: #f8fafc; direction: rtl; unicode-bidi: isolate; white-space: nowrap; }
+    .ltr { direction: ltr; unicode-bidi: isolate; }
+    .money { direction: ltr; unicode-bidi: isolate; display: inline-block; font-weight: 700; }
+    .money.positive { color: var(--green); }
+    .money.negative { color: #a23b3b; }
+    .status.ok { color: #0f6b4a; border-color: #b9decf; background: #ecf8f2; }
+    .status.warn { color: #8a5a00; border-color: #ead6a6; background: #fff8e6; }
+    small { color: var(--muted); }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; overflow: hidden; }
+    th, td { border-bottom: 1px solid var(--line); padding: 10px; text-align: right; font-size: 13px; vertical-align: top; }
+    th { background: #eaf0f5; color: #33404b; position: sticky; top: 0; }
+    tr:last-child td { border-bottom: 0; }
+    .num { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+    .table-wrap { max-height: 620px; overflow: auto; border-radius: 8px; }
+    @media (max-width: 850px) {
+      main { padding: 18px; }
+      header { display: block; }
+      .table-wrap { overflow-x: auto; }
+      table { min-width: 1000px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>اختبار الاستراتيجيات - النسخة الثانية</h1>
+        <div class="sub">تشخيص سلوك الأسهم أولًا، ثم تصميم استراتيجية مخصصة لكل سهم. آخر تحديث: 2026-05-20 16:07:04</div>
+      </div>
+      <div class="sub">هذه ليست نسخة الصفقات بعد؛ هذه واجهة التشخيص والتصميم الأولي.</div>
+    </header>
+    <section class="cards">
+    <article class="card">
+      <span>عدد الأسهم</span>
+      <strong>42</strong>
+      <small>بعد التشخيص الأولي</small>
+    </article>
+    
+    <article class="card">
+      <span>اختراق</span>
+      <strong>8</strong>
+      <small>أسهم تميل لاختراق القمم</small>
+    </article>
+    
+    <article class="card">
+      <span>ارتداد</span>
+      <strong>13</strong>
+      <small>أسهم تتحسن بعد الهبوط</small>
+    </article>
+    
+    <article class="card">
+      <span>ترند</span>
+      <strong>8</strong>
+      <small>أسهم تميل للاتجاه</small>
+    </article>
+    
+    <article class="card">
+      <span>مختلط</span>
+      <strong>13</strong>
+      <small>تحتاج حذر أو شروط إضافية</small>
+    </article>
+    
+    <article class="card">
+      <span>تصاميم نجحت</span>
+      <strong>10</strong>
+      <small>تحقق أولي للاستراتيجيات المصممة</small>
+    </article>
+    </section>
+    <section class="grid">
+      
+    <section class="panel">
+      <h2>أفضل أسهم للاختراق</h2>
+      <ul class="ranked"><li><strong>NVDA</strong><span><span class="num">68.97%</span></span></li><li><strong>AVGO</strong><span><span class="num">67.31%</span></span></li><li><strong>CAT</strong><span><span class="num">66.67%</span></span></li><li><strong>LRCX</strong><span><span class="num">63.79%</span></span></li><li><strong>TEAM</strong><span><span class="num">62.50%</span></span></li><li><strong>GOOGL</strong><span><span class="num">62.00%</span></span></li><li><strong>NET</strong><span><span class="num">59.18%</span></span></li><li><strong>KLAC</strong><span><span class="num">58.62%</span></span></li></ul>
+    </section>
+    
+      
+    <section class="panel">
+      <h2>أفضل أسهم للارتداد</h2>
+      <ul class="ranked"><li><strong>KLAC</strong><span><span class="num">78.57%</span></span></li><li><strong>VRTX</strong><span><span class="num">78.38%</span></span></li><li><strong>LIN</strong><span><span class="num">77.78%</span></span></li><li><strong>LRCX</strong><span><span class="num">74.12%</span></span></li><li><strong>FTNT</strong><span><span class="num">70.69%</span></span></li><li><strong>NVDA</strong><span><span class="num">69.88%</span></span></li><li><strong>AVGO</strong><span><span class="num">69.32%</span></span></li><li><strong>HON</strong><span><span class="num">66.67%</span></span></li></ul>
+    </section>
+    
+      
+    <section class="panel">
+      <h2>أقوى ترند</h2>
+      <ul class="ranked"><li><strong>NVDA</strong><span><span class="num">367.78%</span></span></li><li><strong>AVGO</strong><span><span class="num">291.74%</span></span></li><li><strong>LRCX</strong><span><span class="num">279.98%</span></span></li><li><strong>KLAC</strong><span><span class="num">221.98%</span></span></li><li><strong>AMD</strong><span><span class="num">206.03%</span></span></li><li><strong>MRVL</strong><span><span class="num">204.09%</span></span></li><li><strong>CAT</strong><span><span class="num">203.48%</span></span></li><li><strong>GOOGL</strong><span><span class="num">187.17%</span></span></li></ul>
+    </section>
+    
+      
+    <section class="panel">
+      <h2>أعلى مخاطر/سحب</h2>
+      <ul class="ranked"><li><strong>TTD</strong><span><span class="num">-85.60%</span></span></li><li><strong>TEAM</strong><span><span class="num">-82.30%</span></span></li><li><strong>HUBS</strong><span><span class="num">-78.16%</span></span></li><li><strong>ZS</strong><span><span class="num">-64.89%</span></span></li><li><strong>NOW</strong><span><span class="num">-64.54%</span></span></li><li><strong>ADBE</strong><span><span class="num">-64.50%</span></span></li><li><strong>WDAY</strong><span><span class="num">-63.38%</span></span></li><li><strong>AMD</strong><span><span class="num">-63.00%</span></span></li></ul>
+    </section>
+    
+    </section>
+    
+    <section class="panel" style="margin-top: 14px;">
+      <h2>الاستراتيجيات المستخدمة</h2>
+      <div class="sub" style="margin-bottom: 10px;">هذا القسم يركز على القرار العملي: ما الاستراتيجية، متى تدخل، كيف تخرج، وهل أداؤها منفردا أو داخل المحفظة يستحق المتابعة.</div>
+      <section class="cards compact">
+    <article class="card">
+      <span>الاستراتيجيات المستخدمة</span>
+      <strong>12</strong>
+      <small>المعتمدة داخل المحفظة</small>
+    </article>
+    
+    <article class="card">
+      <span>الأسهم المغطاة</span>
+      <strong>9</strong>
+      <small>الأسهم التسعة الحالية</small>
+    </article>
+    
+    <article class="card">
+      <span>سوينق</span>
+      <strong>7</strong>
+      <small>استراتيجيات قصيرة/متوسطة</small>
+    </article>
+    
+    <article class="card">
+      <span>شهري</span>
+      <strong>5</strong>
+      <small>استراتيجيات أطول</small>
+    </article>
+    
+    <article class="card">
+      <span>تحتاج مراجعة</span>
+      <strong>2</strong>
+      <small>ضعف تحقق أو فوز منخفض</small>
+    </article>
+    
+    <article class="card">
+      <span>متوسط فوز التحقق</span>
+      <strong>57.67%</strong>
+      <small>متوسط العائد 1.12%</small>
+    </article>
+    </section>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>السهم</th><th>الإطار</th><th>الاستراتيجية</th><th>شروط الدخول</th>
+              <th>إدارة الخروج</th><th>سبب الاستخدام</th><th>نتائج التحقق</th><th>أثر المحفظة</th><th>ملاحظة</th>
+            </tr>
+          </thead>
+          <tbody><tr><td><strong>AMD</strong></td><td><span class='pill'>سوينق</span></td><td>اختراق - سوينق</td><td><div class="detail-parts"><span class="detail-chip">فترة الاختراق: 20</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 5.00%</span><span class="detail-chip">المدة: 10 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: نجاح الاختراق التاريخي 56.25%. عائد السهم في فترة التشخيص 206.03%.</td><td>صفقات 5، فوز <span class="num">40.00%</span>، متوسط <span class="num">-0.24%</span>، إجمالي <span class="num">-2.72%</span></td><td><span class="money positive">+$7,523.35</span></td><td>تحتاج مراجعة: التحقق منفردا ضعيف رغم أثرها في المحفظة.</td></tr>
+<tr><td><strong>ANET</strong></td><td><span class='pill'>سوينق</span></td><td>ارتداد RSI - سوينق</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 14</span><span class="detail-chip">عبور RSI فوق 30</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 5.00%</span><span class="detail-chip">المدة: 10 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 64.00%. عائد السهم في فترة التشخيص 145.24%.</td><td>صفقات 22، فوز <span class="num">59.09%</span>، متوسط <span class="num">1.55%</span>، إجمالي <span class="num">35.75%</span></td><td><span class="money positive">+$1,486.51</span></td><td>مقبولة: تحتاج مقارنة دورية مع البدائل.</td></tr>
+<tr><td><strong>ANET</strong></td><td><span class='pill'>شهري</span></td><td>ارتداد RSI - شهري</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 21</span><span class="detail-chip">عبور RSI فوق 45</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 10.00%</span><span class="detail-chip">المدة: 21 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 64.00%. عائد السهم في فترة التشخيص 145.24%.</td><td>صفقات 22، فوز <span class="num">59.09%</span>، متوسط <span class="num">1.55%</span>، إجمالي <span class="num">35.75%</span></td><td><span class="money positive">+$1,486.51</span></td><td>مقبولة: تحتاج مقارنة دورية مع البدائل.</td></tr>
+<tr><td><strong>AVGO</strong></td><td><span class='pill'>سوينق</span></td><td>ارتداد RSI - سوينق</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 7</span><span class="detail-chip">عبور RSI فوق 30</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 5.00%</span><span class="detail-chip">المدة: 10 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 69.32%. عائد السهم في فترة التشخيص 291.74%.</td><td>صفقات 8، فوز <span class="num">75.00%</span>، متوسط <span class="num">3.33%</span>، إجمالي <span class="num">28.27%</span></td><td><span class="money positive">+$845.05</span></td><td>جيدة: الفوز والعائد المتوسط داعمان.</td></tr>
+<tr><td><strong>AVGO</strong></td><td><span class='pill'>شهري</span></td><td>ارتداد RSI - شهري</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 14</span><span class="detail-chip">عبور RSI فوق 30</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 10.00%</span><span class="detail-chip">المدة: 21 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 69.32%. عائد السهم في فترة التشخيص 291.74%.</td><td>صفقات 8، فوز <span class="num">75.00%</span>، متوسط <span class="num">3.33%</span>، إجمالي <span class="num">28.27%</span></td><td><span class="money positive">+$845.05</span></td><td>جيدة: الفوز والعائد المتوسط داعمان.</td></tr>
+<tr><td><strong>LRCX</strong></td><td><span class='pill'>سوينق</span></td><td>ارتداد RSI - سوينق</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 7</span><span class="detail-chip">عبور RSI فوق 40</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 5.00%</span><span class="detail-chip">المدة: 10 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 74.12%. عائد السهم في فترة التشخيص 279.98%.</td><td>صفقات 15، فوز <span class="num">60.00%</span>، متوسط <span class="num">1.37%</span>، إجمالي <span class="num">19.16%</span></td><td><span class="money positive">+$1,578.38</span></td><td>جيدة: الفوز والعائد المتوسط داعمان.</td></tr>
+<tr><td><strong>MRVL</strong></td><td><span class='pill'>شهري</span></td><td>اختراق - شهري</td><td><div class="detail-parts"><span class="detail-chip">فترة الاختراق: 100</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 10.00%</span><span class="detail-chip">المدة: 21 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: نجاح الاختراق التاريخي 44.90%. عائد السهم في فترة التشخيص 204.09%.</td><td>صفقات 22، فوز <span class="num">50.00%</span>، متوسط <span class="num">0.95%</span>، إجمالي <span class="num">17.41%</span></td><td><span class="money positive">+$3,408.02</span></td><td>مقبولة: تحتاج مقارنة دورية مع البدائل.</td></tr>
+<tr><td><strong>NVDA</strong></td><td><span class='pill'>سوينق</span></td><td>ارتداد RSI - سوينق</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 21</span><span class="detail-chip">عبور RSI فوق 35</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 5.00%</span><span class="detail-chip">المدة: 10 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 69.88%. عائد السهم في فترة التشخيص 367.78%.</td><td>صفقات 10، فوز <span class="num">70.00%</span>، متوسط <span class="num">1.30%</span>، إجمالي <span class="num">12.40%</span></td><td><span class="money positive">+$5,565.63</span></td><td>جيدة: الفوز والعائد المتوسط داعمان.</td></tr>
+<tr><td><strong>NVDA</strong></td><td><span class='pill'>شهري</span></td><td>اختراق - شهري</td><td><div class="detail-parts"><span class="detail-chip">فترة الاختراق: 100</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 10.00%</span><span class="detail-chip">المدة: 21 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: نجاح الاختراق التاريخي 68.97%. عائد السهم في فترة التشخيص 367.78%.</td><td>صفقات 10، فوز <span class="num">70.00%</span>، متوسط <span class="num">1.30%</span>، إجمالي <span class="num">12.40%</span></td><td><span class="money positive">+$5,565.63</span></td><td>جيدة: الفوز والعائد المتوسط داعمان.</td></tr>
+<tr><td><strong>PANW</strong></td><td><span class='pill'>شهري</span></td><td>ارتداد RSI - شهري</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 21</span><span class="detail-chip">عبور RSI فوق 35</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 10.00%</span><span class="detail-chip">المدة: 21 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 64.94%. عائد السهم في فترة التشخيص 68.09%.</td><td>صفقات 17، فوز <span class="num">58.82%</span>، متوسط <span class="num">1.08%</span>، إجمالي <span class="num">17.65%</span></td><td><span class="money positive">+$1,858.69</span></td><td>مقبولة: تحتاج مقارنة دورية مع البدائل.</td></tr>
+<tr><td><strong>SHOP</strong></td><td><span class='pill'>سوينق</span></td><td>ارتداد RSI - سوينق</td><td><div class="detail-parts"><span class="detail-chip">فترة RSI: 14</span><span class="detail-chip">عبور RSI فوق 35</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 5.00%</span><span class="detail-chip">المدة: 10 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: استجابة الارتداد التاريخية 54.87%. عائد السهم في فترة التشخيص 35.83%.</td><td>صفقات 12، فوز <span class="num">50.00%</span>، متوسط <span class="num">1.38%</span>، إجمالي <span class="num">13.48%</span></td><td><span class="money positive">+$2,300.71</span></td><td>مقبولة: تحتاج مقارنة دورية مع البدائل.</td></tr>
+<tr><td><strong>TSLA</strong></td><td><span class='pill'>سوينق</span></td><td>اختراق - سوينق</td><td><div class="detail-parts"><span class="detail-chip">فترة الاختراق: 55</span></div></td><td><div class="detail-parts"><span class="detail-chip">الهدف: 5.00%</span><span class="detail-chip">المدة: 10 يوم</span><span class="detail-chip">الوقف: ATR والدعم</span></div></td><td>مخصصة للسهم نفسه بناء على نتائج النسخة الأولى. نقطة القوة: نجاح الاختراق التاريخي 57.14%. عائد السهم في فترة التشخيص 69.97%.</td><td>صفقات 12، فوز <span class="num">25.00%</span>، متوسط <span class="num">-3.45%</span>، إجمالي <span class="num">-36.24%</span></td><td><span class="money positive">+$4,697.72</span></td><td>تحتاج مراجعة: التحقق منفردا ضعيف رغم أثرها في المحفظة.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section class="panel">
+      <h2>تشخيص كل سهم والاستراتيجية المقترحة</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>السهم</th><th>السلوك</th><th>عائد الفترة</th><th>أقصى سحب</th><th>مدى يومي</th>
+              <th>اختراقات</th><th>نجاح الاختراق</th><th>هبوط/ارتداد</th><th>نجاح الارتداد</th><th>تصميم الاستراتيجية</th>
+              <th>قاعدة الدخول</th><th>الهدف</th><th>الوقف</th><th>صفقات التحقق</th><th>فوز التحقق</th><th>عائد التحقق</th><th>نجح؟</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>MSFT</td><td>تتبع ترند</td><td><span class="num">13.76%</span></td><td><span class="num">-34.18%</span></td><td><span class="num">1.79%</span></td><td>44</td><td><span class="num">47.73%</span></td><td>31</td><td><span class="num">51.61%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">5.00%</span></td><td><span class="num">3.50%</span></td><td>4</td><td><span class="num">50.00%</span></td><td><span class="num">-0.65%</span></td><td>False</td></tr>
+<tr><td>NVDA</td><td>اختراق</td><td><span class="num">367.78%</span></td><td><span class="num">-36.89%</span></td><td><span class="num">3.55%</span></td><td>58</td><td><span class="num">68.97%</span></td><td>83</td><td><span class="num">69.88%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">7.81%</span></td><td><span class="num">6.39%</span></td><td>10</td><td><span class="num">70.00%</span></td><td><span class="num">12.40%</span></td><td>True</td></tr>
+<tr><td>GOOGL</td><td>اختراق</td><td><span class="num">187.17%</span></td><td><span class="num">-29.89%</span></td><td><span class="num">2.29%</span></td><td>50</td><td><span class="num">62.00%</span></td><td>51</td><td><span class="num">60.78%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">5.04%</span></td><td><span class="num">4.12%</span></td><td>13</td><td><span class="num">61.54%</span></td><td><span class="num">16.85%</span></td><td>True</td></tr>
+<tr><td>AMZN</td><td>ارتداد بعد هبوط</td><td><span class="num">76.18%</span></td><td><span class="num">-30.88%</span></td><td><span class="num">2.30%</span></td><td>46</td><td><span class="num">41.30%</span></td><td>49</td><td><span class="num">63.27%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">4.14%</span></td><td><span class="num">3.45%</span></td><td>8</td><td><span class="num">62.50%</span></td><td><span class="num">8.48%</span></td><td>True</td></tr>
+<tr><td>TSLA</td><td>تتبع ترند</td><td><span class="num">69.97%</span></td><td><span class="num">-53.77%</span></td><td><span class="num">4.28%</span></td><td>42</td><td><span class="num">57.14%</span></td><td>123</td><td><span class="num">53.66%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">10.27%</span></td><td><span class="num">7.28%</span></td><td>12</td><td><span class="num">25.00%</span></td><td><span class="num">-36.24%</span></td><td>False</td></tr>
+<tr><td>META</td><td>تتبع ترند</td><td><span class="num">77.37%</span></td><td><span class="num">-34.21%</span></td><td><span class="num">2.57%</span></td><td>43</td><td><span class="num">46.51%</span></td><td>57</td><td><span class="num">56.14%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">6.17%</span></td><td><span class="num">4.37%</span></td><td>9</td><td><span class="num">33.33%</span></td><td><span class="num">-15.79%</span></td><td>False</td></tr>
+<tr><td>AVGO</td><td>اختراق</td><td><span class="num">291.74%</span></td><td><span class="num">-41.48%</span></td><td><span class="num">3.55%</span></td><td>52</td><td><span class="num">67.31%</span></td><td>88</td><td><span class="num">69.32%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">7.81%</span></td><td><span class="num">6.39%</span></td><td>8</td><td><span class="num">75.00%</span></td><td><span class="num">28.27%</span></td><td>True</td></tr>
+<tr><td>LLY</td><td>ارتداد بعد هبوط</td><td><span class="num">69.69%</span></td><td><span class="num">-34.83%</span></td><td><span class="num">2.67%</span></td><td>46</td><td><span class="num">47.83%</span></td><td>75</td><td><span class="num">64.00%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">4.81%</span></td><td><span class="num">4.00%</span></td><td>14</td><td><span class="num">50.00%</span></td><td><span class="num">0.91%</span></td><td>False</td></tr>
+<tr><td>COST</td><td>تتبع ترند</td><td><span class="num">61.22%</span></td><td><span class="num">-21.07%</span></td><td><span class="num">1.74%</span></td><td>60</td><td><span class="num">51.67%</span></td><td>12</td><td><span class="num">50.00%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">5.00%</span></td><td><span class="num">3.50%</span></td><td>9</td><td><span class="num">55.56%</span></td><td><span class="num">-1.23%</span></td><td>False</td></tr>
+<tr><td>CRM</td><td>مختلط / متذبذب</td><td><span class="num">-32.26%</span></td><td><span class="num">-55.16%</span></td><td><span class="num">2.63%</span></td><td>28</td><td><span class="num">42.86%</span></td><td>88</td><td><span class="num">43.18%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.68%</span></td><td><span class="num">3.16%</span></td><td>2</td><td><span class="num">50.00%</span></td><td><span class="num">0.40%</span></td><td>False</td></tr>
+<tr><td>ADBE</td><td>مختلط / متذبذب</td><td><span class="num">-57.32%</span></td><td><span class="num">-64.50%</span></td><td><span class="num">2.47%</span></td><td>23</td><td><span class="num">43.48%</span></td><td>84</td><td><span class="num">45.24%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.46%</span></td><td><span class="num">2.96%</span></td><td>0</td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td><td>False</td></tr>
+<tr><td>AMD</td><td>تتبع ترند</td><td><span class="num">206.03%</span></td><td><span class="num">-63.00%</span></td><td><span class="num">3.97%</span></td><td>48</td><td><span class="num">56.25%</span></td><td>118</td><td><span class="num">44.07%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">9.53%</span></td><td><span class="num">6.75%</span></td><td>5</td><td><span class="num">40.00%</span></td><td><span class="num">-2.72%</span></td><td>False</td></tr>
+<tr><td>TMO</td><td>مختلط / متذبذب</td><td><span class="num">-19.45%</span></td><td><span class="num">-37.48%</span></td><td><span class="num">2.26%</span></td><td>37</td><td><span class="num">35.14%</span></td><td>50</td><td><span class="num">38.00%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.16%</span></td><td><span class="num">2.71%</span></td><td>6</td><td><span class="num">33.33%</span></td><td><span class="num">-2.83%</span></td><td>False</td></tr>
+<tr><td>NOW</td><td>مختلط / متذبذب</td><td><span class="num">-30.86%</span></td><td><span class="num">-64.54%</span></td><td><span class="num">2.85%</span></td><td>37</td><td><span class="num">35.14%</span></td><td>97</td><td><span class="num">45.36%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.99%</span></td><td><span class="num">3.42%</span></td><td>6</td><td><span class="num">16.67%</span></td><td><span class="num">-6.68%</span></td><td>False</td></tr>
+<tr><td>INTU</td><td>مختلط / متذبذب</td><td><span class="num">-34.91%</span></td><td><span class="num">-56.53%</span></td><td><span class="num">2.51%</span></td><td>33</td><td><span class="num">33.33%</span></td><td>70</td><td><span class="num">51.43%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.51%</span></td><td><span class="num">3.01%</span></td><td>4</td><td><span class="num">50.00%</span></td><td><span class="num">2.98%</span></td><td>False</td></tr>
+<tr><td>ISRG</td><td>ارتداد بعد هبوط</td><td><span class="num">27.23%</span></td><td><span class="num">-31.19%</span></td><td><span class="num">2.35%</span></td><td>40</td><td><span class="num">42.50%</span></td><td>43</td><td><span class="num">65.12%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">4.23%</span></td><td><span class="num">3.53%</span></td><td>11</td><td><span class="num">45.45%</span></td><td><span class="num">-6.63%</span></td><td>False</td></tr>
+<tr><td>SNPS</td><td>مختلط / متذبذب</td><td><span class="num">0.69%</span></td><td><span class="num">-41.04%</span></td><td><span class="num">3.04%</span></td><td>41</td><td><span class="num">43.90%</span></td><td>85</td><td><span class="num">56.47%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">4.26%</span></td><td><span class="num">3.65%</span></td><td>3</td><td><span class="num">66.67%</span></td><td><span class="num">4.73%</span></td><td>False</td></tr>
+<tr><td>PANW</td><td>ارتداد بعد هبوط</td><td><span class="num">68.09%</span></td><td><span class="num">-36.01%</span></td><td><span class="num">2.95%</span></td><td>42</td><td><span class="num">42.86%</span></td><td>77</td><td><span class="num">64.94%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">5.31%</span></td><td><span class="num">4.43%</span></td><td>17</td><td><span class="num">52.94%</span></td><td><span class="num">10.87%</span></td><td>False</td></tr>
+<tr><td>ANET</td><td>ارتداد بعد هبوط</td><td><span class="num">145.24%</span></td><td><span class="num">-50.42%</span></td><td><span class="num">3.55%</span></td><td>63</td><td><span class="num">50.79%</span></td><td>100</td><td><span class="num">64.00%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">6.39%</span></td><td><span class="num">5.32%</span></td><td>22</td><td><span class="num">59.09%</span></td><td><span class="num">35.75%</span></td><td>True</td></tr>
+<tr><td>KLAC</td><td>اختراق</td><td><span class="num">221.98%</span></td><td><span class="num">-35.39%</span></td><td><span class="num">3.18%</span></td><td>58</td><td><span class="num">58.62%</span></td><td>70</td><td><span class="num">78.57%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">7.00%</span></td><td><span class="num">5.72%</span></td><td>10</td><td><span class="num">60.00%</span></td><td><span class="num">14.98%</span></td><td>True</td></tr>
+<tr><td>LRCX</td><td>اختراق</td><td><span class="num">279.98%</span></td><td><span class="num">-47.58%</span></td><td><span class="num">3.42%</span></td><td>58</td><td><span class="num">63.79%</span></td><td>85</td><td><span class="num">74.12%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">7.52%</span></td><td><span class="num">6.16%</span></td><td>15</td><td><span class="num">60.00%</span></td><td><span class="num">19.16%</span></td><td>True</td></tr>
+<tr><td>CDNS</td><td>ارتداد بعد هبوط</td><td><span class="num">32.08%</span></td><td><span class="num">-29.05%</span></td><td><span class="num">2.78%</span></td><td>36</td><td><span class="num">41.67%</span></td><td>68</td><td><span class="num">66.18%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">5.00%</span></td><td><span class="num">4.17%</span></td><td>13</td><td><span class="num">53.85%</span></td><td><span class="num">2.72%</span></td><td>False</td></tr>
+<tr><td>FTNT</td><td>ارتداد بعد هبوط</td><td><span class="num">112.50%</span></td><td><span class="num">-35.07%</span></td><td><span class="num">2.79%</span></td><td>30</td><td><span class="num">43.33%</span></td><td>58</td><td><span class="num">70.69%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">5.02%</span></td><td><span class="num">4.19%</span></td><td>12</td><td><span class="num">41.67%</span></td><td><span class="num">-9.76%</span></td><td>False</td></tr>
+<tr><td>MRVL</td><td>ارتداد بعد هبوط</td><td><span class="num">204.09%</span></td><td><span class="num">-60.83%</span></td><td><span class="num">4.27%</span></td><td>49</td><td><span class="num">44.90%</span></td><td>115</td><td><span class="num">60.87%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">7.69%</span></td><td><span class="num">6.40%</span></td><td>22</td><td><span class="num">50.00%</span></td><td><span class="num">17.41%</span></td><td>False</td></tr>
+<tr><td>TEAM</td><td>اختراق</td><td><span class="num">-61.42%</span></td><td><span class="num">-82.30%</span></td><td><span class="num">3.96%</span></td><td>24</td><td><span class="num">62.50%</span></td><td>136</td><td><span class="num">45.59%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">8.71%</span></td><td><span class="num">7.13%</span></td><td>8</td><td><span class="num">50.00%</span></td><td><span class="num">3.89%</span></td><td>False</td></tr>
+<tr><td>DDOG</td><td>تتبع ترند</td><td><span class="num">80.73%</span></td><td><span class="num">-48.62%</span></td><td><span class="num">3.53%</span></td><td>31</td><td><span class="num">48.39%</span></td><td>108</td><td><span class="num">48.15%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">8.47%</span></td><td><span class="num">6.00%</span></td><td>7</td><td><span class="num">57.14%</span></td><td><span class="num">14.98%</span></td><td>False</td></tr>
+<tr><td>TTD</td><td>مختلط / متذبذب</td><td><span class="num">-70.04%</span></td><td><span class="num">-85.60%</span></td><td><span class="num">3.82%</span></td><td>38</td><td><span class="num">47.37%</span></td><td>136</td><td><span class="num">41.91%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">5.35%</span></td><td><span class="num">4.58%</span></td><td>5</td><td><span class="num">40.00%</span></td><td><span class="num">0.26%</span></td><td>False</td></tr>
+<tr><td>HUBS</td><td>مختلط / متذبذب</td><td><span class="num">-63.79%</span></td><td><span class="num">-78.16%</span></td><td><span class="num">3.83%</span></td><td>27</td><td><span class="num">48.15%</span></td><td>107</td><td><span class="num">45.79%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">5.36%</span></td><td><span class="num">4.60%</span></td><td>3</td><td><span class="num">33.33%</span></td><td><span class="num">-4.11%</span></td><td>False</td></tr>
+<tr><td>ZS</td><td>مختلط / متذبذب</td><td><span class="num">-24.17%</span></td><td><span class="num">-64.89%</span></td><td><span class="num">3.39%</span></td><td>45</td><td><span class="num">51.11%</span></td><td>101</td><td><span class="num">44.55%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">4.75%</span></td><td><span class="num">4.07%</span></td><td>4</td><td><span class="num">50.00%</span></td><td><span class="num">0.98%</span></td><td>False</td></tr>
+<tr><td>NET</td><td>اختراق</td><td><span class="num">148.97%</span></td><td><span class="num">-45.00%</span></td><td><span class="num">4.08%</span></td><td>49</td><td><span class="num">59.18%</span></td><td>90</td><td><span class="num">62.22%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">8.98%</span></td><td><span class="num">7.34%</span></td><td>16</td><td><span class="num">37.50%</span></td><td><span class="num">-25.27%</span></td><td>False</td></tr>
+<tr><td>CRWD</td><td>ارتداد بعد هبوط</td><td><span class="num">140.63%</span></td><td><span class="num">-44.44%</span></td><td><span class="num">3.73%</span></td><td>44</td><td><span class="num">43.18%</span></td><td>88</td><td><span class="num">62.50%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">6.71%</span></td><td><span class="num">5.59%</span></td><td>19</td><td><span class="num">68.42%</span></td><td><span class="num">56.19%</span></td><td>True</td></tr>
+<tr><td>SNOW</td><td>مختلط / متذبذب</td><td><span class="num">-16.74%</span></td><td><span class="num">-56.30%</span></td><td><span class="num">3.64%</span></td><td>38</td><td><span class="num">44.74%</span></td><td>113</td><td><span class="num">43.36%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">5.10%</span></td><td><span class="num">4.37%</span></td><td>8</td><td><span class="num">37.50%</span></td><td><span class="num">-7.78%</span></td><td>False</td></tr>
+<tr><td>WDAY</td><td>مختلط / متذبذب</td><td><span class="num">-53.40%</span></td><td><span class="num">-63.38%</span></td><td><span class="num">2.79%</span></td><td>29</td><td><span class="num">37.93%</span></td><td>89</td><td><span class="num">51.69%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.91%</span></td><td><span class="num">3.35%</span></td><td>2</td><td><span class="num">0.00%</span></td><td><span class="num">-6.59%</span></td><td>False</td></tr>
+<tr><td>NKE</td><td>مختلط / متذبذب</td><td><span class="num">-60.69%</span></td><td><span class="num">-60.93%</span></td><td><span class="num">2.38%</span></td><td>19</td><td><span class="num">31.58%</span></td><td>83</td><td><span class="num">53.01%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.33%</span></td><td><span class="num">2.86%</span></td><td>0</td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td><td>False</td></tr>
+<tr><td>CAT</td><td>اختراق</td><td><span class="num">203.48%</span></td><td><span class="num">-34.29%</span></td><td><span class="num">2.34%</span></td><td>69</td><td><span class="num">66.67%</span></td><td>35</td><td><span class="num">51.43%</span></td><td>اختراق قمم 20-55 يوم مع وقف متحرك وتأكيد حجم.</td><td>close_above_prior_high</td><td><span class="num">5.15%</span></td><td><span class="num">4.21%</span></td><td>13</td><td><span class="num">53.85%</span></td><td><span class="num">13.97%</span></td><td>False</td></tr>
+<tr><td>HON</td><td>ارتداد بعد هبوط</td><td><span class="num">8.25%</span></td><td><span class="num">-22.52%</span></td><td><span class="num">1.75%</span></td><td>41</td><td><span class="num">48.78%</span></td><td>30</td><td><span class="num">66.67%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">4.00%</span></td><td><span class="num">3.00%</span></td><td>5</td><td><span class="num">20.00%</span></td><td><span class="num">-9.68%</span></td><td>False</td></tr>
+<tr><td>LIN</td><td>ارتداد بعد هبوط</td><td><span class="num">23.57%</span></td><td><span class="num">-19.95%</span></td><td><span class="num">1.52%</span></td><td>55</td><td><span class="num">56.36%</span></td><td>9</td><td><span class="num">77.78%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">4.00%</span></td><td><span class="num">3.00%</span></td><td>2</td><td><span class="num">50.00%</span></td><td><span class="num">-1.74%</span></td><td>False</td></tr>
+<tr><td>REGN</td><td>مختلط / متذبذب</td><td><span class="num">-22.85%</span></td><td><span class="num">-59.80%</span></td><td><span class="num">2.58%</span></td><td>37</td><td><span class="num">45.95%</span></td><td>61</td><td><span class="num">50.82%</span></td><td>حجم أصغر أو تجنب حتى يظهر نمط أوضح.</td><td>reduced_size_breakout_only</td><td><span class="num">3.61%</span></td><td><span class="num">3.10%</span></td><td>5</td><td><span class="num">60.00%</span></td><td><span class="num">4.44%</span></td><td>False</td></tr>
+<tr><td>VRTX</td><td>ارتداد بعد هبوط</td><td><span class="num">6.34%</span></td><td><span class="num">-29.07%</span></td><td><span class="num">2.27%</span></td><td>37</td><td><span class="num">43.24%</span></td><td>37</td><td><span class="num">78.38%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">4.09%</span></td><td><span class="num">3.41%</span></td><td>10</td><td><span class="num">60.00%</span></td><td><span class="num">8.40%</span></td><td>True</td></tr>
+<tr><td>ABNB</td><td>ارتداد بعد هبوط</td><td><span class="num">-1.21%</span></td><td><span class="num">-37.16%</span></td><td><span class="num">2.67%</span></td><td>28</td><td><span class="num">35.71%</span></td><td>70</td><td><span class="num">58.57%</span></td><td>شراء ارتداد بعد هبوط حاد مع فلتر ترند وخروج سريع.</td><td>five_day_drop_recovery</td><td><span class="num">4.81%</span></td><td><span class="num">4.00%</span></td><td>15</td><td><span class="num">66.67%</span></td><td><span class="num">22.89%</span></td><td>True</td></tr>
+<tr><td>SHOP</td><td>تتبع ترند</td><td><span class="num">35.83%</span></td><td><span class="num">-46.71%</span></td><td><span class="num">3.96%</span></td><td>46</td><td><span class="num">39.13%</span></td><td>113</td><td><span class="num">54.87%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">9.50%</span></td><td><span class="num">6.73%</span></td><td>12</td><td><span class="num">50.00%</span></td><td><span class="num">13.48%</span></td><td>False</td></tr>
+<tr><td>SPOT</td><td>تتبع ترند</td><td><span class="num">131.43%</span></td><td><span class="num">-46.80%</span></td><td><span class="num">3.39%</span></td><td>47</td><td><span class="num">46.81%</span></td><td>76</td><td><span class="num">53.95%</span></td><td>تتبع ترند باستخدام متوسطات وخروج بالوقف المتحرك.</td><td>trend_pullback_resume</td><td><span class="num">8.14%</span></td><td><span class="num">5.76%</span></td><td>13</td><td><span class="num">46.15%</span></td><td><span class="num">4.53%</span></td><td>False</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="panel" style="margin-top: 14px;">
+      <h2>تحسين التصميمات التي فشلت</h2>
+      <div class="sub" style="margin-bottom: 10px;">هذا الجدول لا يطارد أفضل رقم، بل يشرح لماذا فشل التصميم الأولي وما التعديل المنطقي المقترح.</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>السهم</th><th>السلوك</th><th>سبب الفشل</th><th>الدخول الحالي</th><th>الدخول المقترح</th>
+              <th>هدف مقترح</th><th>وقف مقترح</th><th>فوز سابق</th><th>التعديل المقترح</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>MSFT</td><td>تتبع ترند</td><td>قلة إشارات التحقق</td><td>trend_pullback_resume</td><td>trend_pullback_resume</td><td><span class="num">4.50%</span></td><td><span class="num">3.50%</span></td><td><span class="num">50.00%</span></td><td>استخدام pullback أقصر داخل الترند أو السماح بالدخول عند اختراق متوسط 20.</td></tr>
+<tr><td>TSLA</td><td>تتبع ترند</td><td>نسبة فوز ضعيفة</td><td>trend_pullback_resume</td><td>avoid_or_half_size</td><td><span class="num">8.22%</span></td><td><span class="num">6.19%</span></td><td><span class="num">25.00%</span></td><td>تقليل حجم الصفقة أو تجنب السهم حتى يظهر نمط أوضح.</td></tr>
+<tr><td>META</td><td>تتبع ترند</td><td>نسبة فوز ضعيفة</td><td>trend_pullback_resume</td><td>five_day_drop_recovery</td><td><span class="num">4.94%</span></td><td><span class="num">3.71%</span></td><td><span class="num">33.33%</span></td><td>تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.</td></tr>
+<tr><td>LLY</td><td>ارتداد بعد هبوط</td><td>عدد خسائر مرتفع</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">4.81%</span></td><td><span class="num">4.80%</span></td><td><span class="num">50.00%</span></td><td>استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.</td></tr>
+<tr><td>COST</td><td>تتبع ترند</td><td>العائد المتوسط غير كاف</td><td>trend_pullback_resume</td><td>trend_pullback_resume</td><td><span class="num">3.75%</span></td><td><span class="num">3.50%</span></td><td><span class="num">55.56%</span></td><td>تقليل الهدف وزيادة الاعتماد على الوقف المتحرك لجني أرباح أسرع.</td></tr>
+<tr><td>CRM</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.31%</span></td><td><span class="num">3.16%</span></td><td><span class="num">50.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>ADBE</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.11%</span></td><td><span class="num">2.96%</span></td><td><span class="num">0.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>AMD</td><td>تتبع ترند</td><td>قلة إشارات التحقق</td><td>trend_pullback_resume</td><td>trend_pullback_resume</td><td><span class="num">8.58%</span></td><td><span class="num">6.75%</span></td><td><span class="num">40.00%</span></td><td>استخدام pullback أقصر داخل الترند أو السماح بالدخول عند اختراق متوسط 20.</td></tr>
+<tr><td>TMO</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.00%</span></td><td><span class="num">2.71%</span></td><td><span class="num">33.33%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>NOW</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.59%</span></td><td><span class="num">3.42%</span></td><td><span class="num">16.67%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>INTU</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.16%</span></td><td><span class="num">3.01%</span></td><td><span class="num">50.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>ISRG</td><td>ارتداد بعد هبوط</td><td>نسبة فوز ضعيفة</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">3.38%</span></td><td><span class="num">3.00%</span></td><td><span class="num">45.45%</span></td><td>تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.</td></tr>
+<tr><td>SNPS</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.83%</span></td><td><span class="num">3.65%</span></td><td><span class="num">66.67%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>PANW</td><td>ارتداد بعد هبوط</td><td>عدد خسائر مرتفع</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">5.31%</span></td><td><span class="num">5.32%</span></td><td><span class="num">52.94%</span></td><td>استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.</td></tr>
+<tr><td>CDNS</td><td>ارتداد بعد هبوط</td><td>عدد خسائر مرتفع</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">5.00%</span></td><td><span class="num">5.00%</span></td><td><span class="num">53.85%</span></td><td>استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.</td></tr>
+<tr><td>FTNT</td><td>ارتداد بعد هبوط</td><td>نسبة فوز ضعيفة</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">4.02%</span></td><td><span class="num">3.56%</span></td><td><span class="num">41.67%</span></td><td>تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.</td></tr>
+<tr><td>MRVL</td><td>ارتداد بعد هبوط</td><td>عدد خسائر مرتفع</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">7.69%</span></td><td><span class="num">7.68%</span></td><td><span class="num">50.00%</span></td><td>استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.</td></tr>
+<tr><td>TEAM</td><td>اختراق</td><td>عدد خسائر مرتفع</td><td>close_above_prior_high</td><td>close_above_prior_high</td><td><span class="num">8.71%</span></td><td><span class="num">8.56%</span></td><td><span class="num">50.00%</span></td><td>استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.</td></tr>
+<tr><td>DDOG</td><td>تتبع ترند</td><td>قلة إشارات التحقق</td><td>trend_pullback_resume</td><td>trend_pullback_resume</td><td><span class="num">7.62%</span></td><td><span class="num">6.00%</span></td><td><span class="num">57.14%</span></td><td>استخدام pullback أقصر داخل الترند أو السماح بالدخول عند اختراق متوسط 20.</td></tr>
+<tr><td>TTD</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">4.81%</span></td><td><span class="num">4.58%</span></td><td><span class="num">40.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>HUBS</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">4.82%</span></td><td><span class="num">4.60%</span></td><td><span class="num">33.33%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>ZS</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">4.28%</span></td><td><span class="num">4.07%</span></td><td><span class="num">50.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>NET</td><td>اختراق</td><td>نسبة فوز ضعيفة</td><td>close_above_prior_high</td><td>avoid_or_half_size</td><td><span class="num">7.18%</span></td><td><span class="num">6.24%</span></td><td><span class="num">37.50%</span></td><td>تقليل حجم الصفقة أو تجنب السهم حتى يظهر نمط أوضح.</td></tr>
+<tr><td>SNOW</td><td>مختلط / متذبذب</td><td>نسبة فوز ضعيفة</td><td>reduced_size_breakout_only</td><td>avoid_or_half_size</td><td><span class="num">4.08%</span></td><td><span class="num">3.71%</span></td><td><span class="num">37.50%</span></td><td>تقليل حجم الصفقة أو تجنب السهم حتى يظهر نمط أوضح.</td></tr>
+<tr><td>WDAY</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.52%</span></td><td><span class="num">3.35%</span></td><td><span class="num">0.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>NKE</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.00%</span></td><td><span class="num">2.86%</span></td><td><span class="num">0.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>CAT</td><td>اختراق</td><td>عدد خسائر مرتفع</td><td>close_above_prior_high</td><td>close_above_prior_high</td><td><span class="num">5.15%</span></td><td><span class="num">5.05%</span></td><td><span class="num">53.85%</span></td><td>استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.</td></tr>
+<tr><td>HON</td><td>ارتداد بعد هبوط</td><td>قلة إشارات التحقق</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">3.60%</span></td><td><span class="num">3.00%</span></td><td><span class="num">20.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>LIN</td><td>ارتداد بعد هبوط</td><td>قلة إشارات التحقق</td><td>five_day_drop_recovery</td><td>five_day_drop_recovery</td><td><span class="num">3.60%</span></td><td><span class="num">3.00%</span></td><td><span class="num">50.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>REGN</td><td>مختلط / متذبذب</td><td>قلة إشارات التحقق</td><td>reduced_size_breakout_only</td><td>reduced_size_breakout_only</td><td><span class="num">3.25%</span></td><td><span class="num">3.10%</span></td><td><span class="num">60.00%</span></td><td>توسيع شروط الدخول قليلًا مع بقاء فلتر الترند.</td></tr>
+<tr><td>SHOP</td><td>تتبع ترند</td><td>عدد خسائر مرتفع</td><td>trend_pullback_resume</td><td>trend_pullback_resume</td><td><span class="num">9.50%</span></td><td><span class="num">8.08%</span></td><td><span class="num">50.00%</span></td><td>استخدام وقف أوسع قليلًا مع فلتر حجم/ترند أقوى، أو تقليل حجم الصفقة.</td></tr>
+<tr><td>SPOT</td><td>تتبع ترند</td><td>نسبة فوز ضعيفة</td><td>trend_pullback_resume</td><td>five_day_drop_recovery</td><td><span class="num">6.51%</span></td><td><span class="num">4.90%</span></td><td><span class="num">46.15%</span></td><td>تحويل التصميم إلى ارتداد بعد هبوط لأن الارتداد أنجح من الاختراق تاريخيًا.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="panel" style="margin-top: 14px;">
+      <h2>مقارنة التصميم الأولي مع التصميم المحسن</h2>
+      <div class="sub" style="margin-bottom: 10px;">نختار v2 فقط إذا حسّن العائد، وإلا نحتفظ بتصميم v1.</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>السهم</th><th>النسخة المختارة</th><th>نجاح v1</th><th>نجاح v2</th>
+              <th>عائد v1</th><th>عائد v2</th><th>فرق العائد</th><th>فرق الفوز</th>
+            </tr>
+          </thead>
+          <tbody><tr><td>ISRG</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">-6.63%</span></td><td><span class="num">4.31%</span></td><td><span class="num">10.94%</span></td><td><span class="num">9.10%</span></td></tr>
+<tr><td>LLY</td><td>v2_refined</td><td>False</td><td>True</td><td><span class="num">0.91%</span></td><td><span class="num">10.76%</span></td><td><span class="num">9.85%</span></td><td><span class="num">14.29%</span></td></tr>
+<tr><td>COST</td><td>v2_refined</td><td>False</td><td>True</td><td><span class="num">-1.23%</span></td><td><span class="num">5.81%</span></td><td><span class="num">7.04%</span></td><td><span class="num">11.11%</span></td></tr>
+<tr><td>PANW</td><td>v2_refined</td><td>False</td><td>True</td><td><span class="num">10.87%</span></td><td><span class="num">17.65%</span></td><td><span class="num">6.78%</span></td><td><span class="num">5.88%</span></td></tr>
+<tr><td>NKE</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">0.00%</span></td><td><span class="num">3.06%</span></td><td><span class="num">3.06%</span></td><td><span class="num">66.67%</span></td></tr>
+<tr><td>FTNT</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">-9.76%</span></td><td><span class="num">-6.76%</span></td><td><span class="num">3.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>TMO</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">-2.83%</span></td><td><span class="num">-0.01%</span></td><td><span class="num">2.82%</span></td><td><span class="num">11.11%</span></td></tr>
+<tr><td>WDAY</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">-6.59%</span></td><td><span class="num">-3.80%</span></td><td><span class="num">2.79%</span></td><td><span class="num">25.00%</span></td></tr>
+<tr><td>CDNS</td><td>v2_refined</td><td>False</td><td>True</td><td><span class="num">2.72%</span></td><td><span class="num">5.10%</span></td><td><span class="num">2.38%</span></td><td><span class="num">7.69%</span></td></tr>
+<tr><td>HUBS</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">-4.11%</span></td><td><span class="num">-2.47%</span></td><td><span class="num">1.64%</span></td><td><span class="num">16.67%</span></td></tr>
+<tr><td>INTU</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">2.98%</span></td><td><span class="num">4.59%</span></td><td><span class="num">1.61%</span></td><td><span class="num">10.00%</span></td></tr>
+<tr><td>META</td><td>v2_refined</td><td>False</td><td>False</td><td><span class="num">-15.79%</span></td><td><span class="num">-14.95%</span></td><td><span class="num">0.84%</span></td><td><span class="num">-3.33%</span></td></tr>
+<tr><td>NVDA</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">12.40%</span></td><td><span class="num">12.40%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>GOOGL</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">16.85%</span></td><td><span class="num">16.85%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>AMZN</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">8.48%</span></td><td><span class="num">8.48%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>TSLA</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-36.24%</span></td><td><span class="num">-36.24%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>AVGO</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">28.27%</span></td><td><span class="num">28.27%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>ADBE</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>ANET</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">35.75%</span></td><td><span class="num">35.75%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>KLAC</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">14.98%</span></td><td><span class="num">14.98%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>LRCX</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">19.16%</span></td><td><span class="num">19.16%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>NET</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-25.27%</span></td><td><span class="num">-25.27%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>CRWD</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">56.19%</span></td><td><span class="num">56.19%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>SNOW</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-7.78%</span></td><td><span class="num">-7.78%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>HON</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-9.68%</span></td><td><span class="num">-9.68%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>LIN</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-1.74%</span></td><td><span class="num">-1.74%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>VRTX</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">8.40%</span></td><td><span class="num">8.40%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>ABNB</td><td>v1_original</td><td>True</td><td>True</td><td><span class="num">22.89%</span></td><td><span class="num">22.89%</span></td><td><span class="num">0.00%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>CAT</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">13.97%</span></td><td><span class="num">13.87%</span></td><td><span class="num">-0.10%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>CRM</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">0.40%</span></td><td><span class="num">0.09%</span></td><td><span class="num">-0.31%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>NOW</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-6.68%</span></td><td><span class="num">-7.04%</span></td><td><span class="num">-0.36%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>MSFT</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-0.65%</span></td><td><span class="num">-1.13%</span></td><td><span class="num">-0.48%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>SNPS</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">4.73%</span></td><td><span class="num">3.96%</span></td><td><span class="num">-0.77%</span></td><td><span class="num">-9.53%</span></td></tr>
+<tr><td>REGN</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">4.44%</span></td><td><span class="num">3.40%</span></td><td><span class="num">-1.04%</span></td><td><span class="num">-2.86%</span></td></tr>
+<tr><td>AMD</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">-2.72%</span></td><td><span class="num">-4.40%</span></td><td><span class="num">-1.68%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>DDOG</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">14.98%</span></td><td><span class="num">11.42%</span></td><td><span class="num">-3.56%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>TTD</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">0.26%</span></td><td><span class="num">-5.31%</span></td><td><span class="num">-5.57%</span></td><td><span class="num">-6.67%</span></td></tr>
+<tr><td>TEAM</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">3.89%</span></td><td><span class="num">-2.36%</span></td><td><span class="num">-6.25%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>SHOP</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">13.48%</span></td><td><span class="num">3.98%</span></td><td><span class="num">-9.50%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>ZS</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">0.98%</span></td><td><span class="num">-11.66%</span></td><td><span class="num">-12.64%</span></td><td><span class="num">-21.43%</span></td></tr>
+<tr><td>MRVL</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">17.41%</span></td><td><span class="num">3.72%</span></td><td><span class="num">-13.69%</span></td><td><span class="num">0.00%</span></td></tr>
+<tr><td>SPOT</td><td>v1_original</td><td>False</td><td>False</td><td><span class="num">4.53%</span></td><td><span class="num">-22.00%</span></td><td><span class="num">-26.53%</span></td><td><span class="num">-15.38%</span></td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

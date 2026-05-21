@@ -1,0 +1,25 @@
+{
+  "project_name": "اختبار الاستراتيجيات - النسخة الثانية",
+  "start_date": "2024-01-01",
+  "initial_capital": 10000.0,
+  "position_cap_pct": 0.4,
+  "active_timeframes": [
+    "swing",
+    "monthly"
+  ],
+  "liquidity_lookback_days": 20,
+  "max_trade_adv_pct": 0.01,
+  "trailing_stop_step_pct": 1.0,
+  "min_verification_trades": 8,
+  "min_verification_win_rate": 55.0,
+  "min_verification_avg_return": 0.0,
+  "excluded_portfolio_behaviors": [
+    "mixed_or_choppy"
+  ],
+  "use_portfolio_proxy_gate": false,
+  "require_v2_to_beat_v1_by_ticker": false,
+  "portfolio_universe": "v1_benchmark_tickers",
+  "benchmark_comparison_mode": true,
+  "min_acceptable_annual_return_pct": 70.0,
+  "methodology": "diagnose_then_design"
+}
