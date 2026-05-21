@@ -787,3 +787,29 @@ Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_port
 [2026-05-20 16:07:13] netlify deploy failed with exit code 1
 [2026-05-20 16:07:13] running netlify deploy: C:\Program Files\WindowsApps\OpenAI.Codex_26.513.4821.0_x64__2p2nqsd0c76g0\app\resources\node.EXE C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
 [2026-05-20 16:07:13] netlify command permission error: [WinError 5] Access is denied
+[2026-05-21 13:06:06] starting V2 GitHub Pages update
+[2026-05-21 13:06:07] market data refreshed: AMD through 2026-05-20
+[2026-05-21 13:06:07] market data refreshed: ANET through 2026-05-20
+[2026-05-21 13:06:08] market data refreshed: AVGO through 2026-05-20
+[2026-05-21 13:06:08] market data refreshed: LRCX through 2026-05-20
+[2026-05-21 13:06:08] market data refreshed: MRVL through 2026-05-20
+[2026-05-21 13:06:09] market data refreshed: NVDA through 2026-05-20
+[2026-05-21 13:06:09] market data refreshed: PANW through 2026-05-20
+[2026-05-21 13:06:09] market data refreshed: SHOP through 2026-05-20
+[2026-05-21 13:06:10] market data refreshed: TSLA through 2026-05-20
+[2026-05-21 13:06:10] market data refreshed: QQQ through 2026-05-20
+[2026-05-21 13:06:10] market data refreshed: SPY through 2026-05-20
+[2026-05-21 13:06:11] market data refreshed: SOXX through 2026-05-20
+[2026-05-21 13:06:11] running build dashboard: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/paper_portfolio_v2.py
+[2026-05-21 13:06:29] Portfolio value: 113293.97
+Shadow stop value: 99659.93
+Trades: 342
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/paper_portfolio_v2_dashboard.html
+Analytics: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/paper_portfolio_v2_analytics.html
+[2026-05-21 13:06:29] running build strategy diagnosis: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/build_dashboard.py
+[2026-05-21 13:06:29] Dashboard written: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/strategy_v2_dashboard.html
+[2026-05-21 13:06:29] running prepare GitHub Pages: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/prepare_github_pages.py
+[2026-05-21 13:06:29] Prepared GitHub Pages folder: /home/runner/work/strategy-testing-v2/strategy-testing-v2/publish_dashboard
+[2026-05-21 13:06:29] finished V2 GitHub Pages update
