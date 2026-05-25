@@ -891,3 +891,29 @@ Analytics: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/pap
 [2026-05-24 06:10:59] running prepare GitHub Pages: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/prepare_github_pages.py
 [2026-05-24 06:10:59] Prepared GitHub Pages folder: /home/runner/work/strategy-testing-v2/strategy-testing-v2/publish_dashboard
 [2026-05-24 06:10:59] finished V2 GitHub Pages update
+[2026-05-25 06:46:06] starting V2 GitHub Pages update
+[2026-05-25 06:46:07] market data refreshed: AMD through 2026-05-22
+[2026-05-25 06:46:07] market data refreshed: ANET through 2026-05-22
+[2026-05-25 06:46:07] market data refreshed: AVGO through 2026-05-22
+[2026-05-25 06:46:07] market data refreshed: LRCX through 2026-05-22
+[2026-05-25 06:46:07] market data refreshed: MRVL through 2026-05-22
+[2026-05-25 06:46:07] market data refreshed: NVDA through 2026-05-22
+[2026-05-25 06:46:07] market data refreshed: PANW through 2026-05-22
+[2026-05-25 06:46:08] market data refreshed: SHOP through 2026-05-22
+[2026-05-25 06:46:08] market data refreshed: TSLA through 2026-05-22
+[2026-05-25 06:46:08] market data refreshed: QQQ through 2026-05-22
+[2026-05-25 06:46:08] market data refreshed: SPY through 2026-05-22
+[2026-05-25 06:46:08] market data refreshed: SOXX through 2026-05-22
+[2026-05-25 06:46:08] running build dashboard: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/paper_portfolio_v2.py
+[2026-05-25 06:46:27] Portfolio value: 115443.08
+Shadow stop value: 101422.04
+Trades: 344
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/paper_portfolio_v2_dashboard.html
+Analytics: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/paper_portfolio_v2_analytics.html
+[2026-05-25 06:46:27] running build strategy diagnosis: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/build_dashboard.py
+[2026-05-25 06:46:27] Dashboard written: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/strategy_v2_dashboard.html
+[2026-05-25 06:46:27] running prepare GitHub Pages: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/prepare_github_pages.py
+[2026-05-25 06:46:27] Prepared GitHub Pages folder: /home/runner/work/strategy-testing-v2/strategy-testing-v2/publish_dashboard
+[2026-05-25 06:46:27] finished V2 GitHub Pages update
