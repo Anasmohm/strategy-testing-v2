@@ -1,3 +1,3 @@
 avg_loss_pct,closed_trades,losses,losses_improved,max_drawdown_pct,monthly_stop_cap_pct,pnl,portfolio_value,scenario,swing_stop_cap_pct,winners_reduced_by_early_stop,winners_turned_loss,wins,worst_loss_pct
--6.78,347,37,,-9.95,,109493.41,119493.41,baseline,,,,310,-16.15
--5.98,349,45,23,-9.35,10.0,95375.37,105375.37,shadow_tighter_stop,6.0,8,8,304,-10.0
+-6.78,347,37,,-9.95,,109310.33,119310.33,baseline,,,,310,-16.15
+-5.98,349,45,24,-9.35,10.0,95214.18,105214.18,shadow_tighter_stop,6.0,8,8,304,-10.0

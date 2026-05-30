@@ -4,7 +4,7 @@ True,v1_success_monthly,v1_breakout,2,5320.87,benchmark_comparison_included,v2_f
 True,v1_success_swing,v1_breakout,1,4697.72,benchmark_comparison_included,v2_from_v1_success,TSLA,,,-3.45,-36.24,12,25.0
 True,v1_success_swing,v1_rsi_recovery,2,845.05,benchmark_comparison_included,v2_from_v1_success,AVGO,,,3.33,28.27,8,75.0
 True,v1_success_monthly,v1_rsi_recovery,2,845.05,benchmark_comparison_included,v2_from_v1_success,AVGO,,,3.33,28.27,8,75.0
-True,v1_success_swing,v1_breakout,8,7588.86,benchmark_comparison_included,v2_from_v1_success,AMD,,,-0.24,-2.72,5,40.0
+True,v1_success_swing,v1_breakout,8,7562.99,benchmark_comparison_included,v2_from_v1_success,AMD,,,-0.24,-2.72,5,40.0
 True,v1_success_monthly,v1_rsi_recovery,0,1858.69,benchmark_comparison_included,v2_from_v1_success,PANW,,,1.08,17.65,17,58.82
 True,v1_success_swing,v1_rsi_recovery,4,1862.92,benchmark_comparison_included,v2_from_v1_success,ANET,,,1.55,35.75,22,59.09
 True,v1_success_monthly,v1_rsi_recovery,4,1862.92,benchmark_comparison_included,v2_from_v1_success,ANET,,,1.55,35.75,22,59.09
