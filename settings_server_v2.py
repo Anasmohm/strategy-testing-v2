@@ -20,8 +20,14 @@ def save_config(config: dict[str, object]) -> None:
     CONFIG.write_text(json.dumps(config, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def rebuild() -> subprocess.CompletedProcess[str]:
-    return subprocess.run([sys.executable, str(ROOT / "update_publish_v2.py")], cwd=ROOT, capture_output=True, text=True)
+def rebuild(refresh_data: bool = False) -> subprocess.CompletedProcess[str]:
+    # Parameter edits recalculate from cached official bars; the refresh button pulls EODHD first.
+    if refresh_data:
+        return subprocess.run([sys.executable, str(ROOT / "update_github_pages.py")], cwd=ROOT, capture_output=True, text=True)
+    result = subprocess.run([sys.executable, str(ROOT / "paper_portfolio_v31.py")], cwd=ROOT, capture_output=True, text=True)
+    if result.returncode != 0:
+        return result
+    return subprocess.run([sys.executable, str(ROOT / "prepare_github_pages.py")], cwd=ROOT, capture_output=True, text=True)
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -47,7 +53,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:
         if self.path == "/refresh":
-            result = rebuild()
+            result = rebuild(refresh_data=True)
             self._send(
                 200 if result.returncode == 0 else 500,
                 {"ok": result.returncode == 0, "stdout": result.stdout[-2000:], "stderr": result.stderr[-2000:]},

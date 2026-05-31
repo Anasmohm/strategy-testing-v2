@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 approved,behavior,entry_rule,portfolio_proxy_losses,portfolio_proxy_pnl,reason,selected_version,ticker,v1_ticker_losses,v1_ticker_pnl,verification_avg_return,verification_total_return,verification_trades,verification_win_rate
 True,v1_success_swing,v1_rsi_recovery,2,5320.87,benchmark_comparison_included,v2_from_v1_success,NVDA,,,1.3,12.4,10,70.0
 True,v1_success_monthly,v1_breakout,2,5320.87,benchmark_comparison_included,v2_from_v1_success,NVDA,,,1.3,12.4,10,70.0
@@ -11,3 +12,18 @@ True,v1_success_monthly,v1_rsi_recovery,4,1862.92,benchmark_comparison_included,
 True,v1_success_swing,v1_rsi_recovery,6,1709.82,benchmark_comparison_included,v2_from_v1_success,LRCX,,,1.37,19.16,15,60.0
 True,v1_success_monthly,v1_breakout,2,4630.39,benchmark_comparison_included,v2_from_v1_success,MRVL,,,0.95,17.41,22,50.0
 True,v1_success_swing,v1_rsi_recovery,3,2546.22,benchmark_comparison_included,v2_from_v1_success,SHOP,,,1.38,13.48,12,50.0
+=======
+approved,behavior,entry_rule,portfolio_proxy_losses,portfolio_proxy_pnl,reason,selected_version,ticker,v1_ticker_losses,v1_ticker_pnl,verification_avg_return,verification_total_return,verification_trades,verification_win_rate
+True,v1_success_swing,v1_rsi_recovery,1,5423.07,benchmark_comparison_included,v2_from_v1_success,NVDA,1,20529.61,1.3,12.4,10,70.0
+True,v1_success_monthly,v1_breakout,1,5423.07,benchmark_comparison_included,v2_from_v1_success,NVDA,1,20529.61,1.3,12.4,10,70.0
+True,v1_success_swing,v1_breakout,1,4697.72,benchmark_comparison_included,v2_from_v1_success,TSLA,1,14416.32,-3.45,-36.24,12,25.0
+True,v1_success_swing,v1_rsi_recovery,2,845.05,benchmark_comparison_included,v2_from_v1_success,AVGO,11,13051.68,3.33,28.27,8,75.0
+True,v1_success_monthly,v1_rsi_recovery,2,845.05,benchmark_comparison_included,v2_from_v1_success,AVGO,11,13051.68,3.33,28.27,8,75.0
+True,v1_success_swing,v1_breakout,8,7523.35,benchmark_comparison_included,v2_from_v1_success,AMD,8,21047.19,-0.24,-2.72,5,40.0
+True,v1_success_monthly,v1_rsi_recovery,0,1858.69,benchmark_comparison_included,v2_from_v1_success,PANW,0,6452.46,1.08,17.65,17,58.82
+True,v1_success_swing,v1_rsi_recovery,4,1862.92,benchmark_comparison_included,v2_from_v1_success,ANET,4,13183.33,1.55,35.75,22,59.09
+True,v1_success_monthly,v1_rsi_recovery,4,1862.92,benchmark_comparison_included,v2_from_v1_success,ANET,4,13183.33,1.55,35.75,22,59.09
+True,v1_success_swing,v1_rsi_recovery,6,1709.82,benchmark_comparison_included,v2_from_v1_success,LRCX,6,6804.92,1.37,19.16,15,60.0
+True,v1_success_monthly,v1_breakout,2,3855.75,benchmark_comparison_included,v2_from_v1_success,MRVL,2,11325.51,0.95,17.41,22,50.0
+True,v1_success_swing,v1_rsi_recovery,3,2349.01,benchmark_comparison_included,v2_from_v1_success,SHOP,3,7835.47,1.38,13.48,12,50.0
+>>>>>>> c375ffa (Adopt approved portfolio dashboard)

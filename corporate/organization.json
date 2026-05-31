@@ -1,0 +1,37 @@
+{
+  "organization_id": "investment_management_platform",
+  "display_name_ar": "منصة ادارة الاستثمار",
+  "governance": {
+    "board": {
+      "role_ar": "مجلس الادارة",
+      "authority_ar": "اعتماد المحافظ والتغيرات الجوهرية في السياسات الاستثمارية والمخاطر"
+    },
+    "chief_executive": {
+      "role_ar": "المدير التنفيذي",
+      "authority_ar": "تنسيق الادارات ورفع تقارير الاداء والقرارات المطلوب اعتمادها"
+    }
+  },
+  "executive_departments": [
+    {
+      "id": "data_management",
+      "name_ar": "ادارة البيانات",
+      "path": "departments/data_management"
+    },
+    {
+      "id": "investment_research",
+      "name_ar": "ادارة التحليل والاستثمار",
+      "path": "departments/investment_research"
+    },
+    {
+      "id": "solutions",
+      "name_ar": "ادارة الحلول",
+      "path": "departments/solutions"
+    },
+    {
+      "id": "portfolio_management",
+      "name_ar": "ادارة الصناديق والمحافظ",
+      "path": "departments/portfolio_management"
+    }
+  ],
+  "active_portfolio_registry": "corporate/executive_office/portfolio_registry.json"
+}

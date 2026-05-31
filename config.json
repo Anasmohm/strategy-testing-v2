@@ -1,6 +1,9 @@
 {
   "project_name": "اختبار الاستراتيجيات - النسخة الثانية",
-  "start_date": "2024-01-01",
+  "organization_id": "investment_management_platform",
+  "active_portfolio_id": "sharia_us_growth_v1",
+  "portfolio_display_name_ar": "محفظة النمو الأمريكية الشرعية",
+  "start_date": "2021-01-01",
   "initial_capital": 10000.0,
   "position_cap_pct": 0.4,
   "active_timeframes": [
@@ -9,7 +12,7 @@
   ],
   "liquidity_lookback_days": 20,
   "max_trade_adv_pct": 0.01,
-  "trailing_stop_step_pct": 1.0,
+  "trailing_stop_step_pct": 0.5,
   "min_verification_trades": 8,
   "min_verification_win_rate": 55.0,
   "min_verification_avg_return": 0.0,
@@ -21,5 +24,16 @@
   "portfolio_universe": "v1_benchmark_tickers",
   "benchmark_comparison_mode": true,
   "min_acceptable_annual_return_pct": 70.0,
-  "methodology": "diagnose_then_design"
+  "methodology": "diagnose_then_design",
+  "approved_portfolio_version": "V3.1 Hybrid / Daily-High Next-Session 0.5%",
+  "market_data_source": "EODHD EOD-IntraDay All World",
+  "market_data_interval": "5m",
+  "market_data_warmup_start_date": "2021-01-01",
+  "market_data_daily_history_start_date": "2020-01-01",
+  "execution_model": "five_minute_target_stop_daily_high_next_session_trailing",
+  "trailing_stop_update_timing": "completed_daily_high_next_session",
+  "trailing_stop_selection_period": "2021-01-01/2021-12-31",
+  "conservative_evaluation_period_start": "2022-01-01",
+  "approved_dashboard": "reports/portfolio_dashboard.html",
+  "approved_simulation_dashboard": "reports/portfolio_simulation.html"
 }

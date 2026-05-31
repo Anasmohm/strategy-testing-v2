@@ -1,0 +1,21 @@
+{
+  "portfolio_id": "sharia_us_growth_v1",
+  "capital_policy": {
+    "initial_capital_usd": 10000.0,
+    "maximum_position_pct_of_available_cash": 40.0,
+    "maximum_trade_pct_of_average_dollar_volume": 1.0,
+    "liquidity_lookback_trading_days": 20
+  },
+  "execution_policy": {
+    "market_data_source": "EODHD EOD-IntraDay All World",
+    "execution_interval": "5m",
+    "target_and_known_stop_execution": "five_minute_regular_session_bars",
+    "trailing_stop_model": "completed_daily_high_next_session",
+    "trailing_stop_step_pct": 0.5
+  },
+  "selection_disclosure": {
+    "trailing_stop_selection_period": "2021-01-01/2021-12-31",
+    "conservative_evaluation_period_start": "2022-01-01",
+    "note_ar": "تظهر الفترة الكاملة في التقرير الرسمي، بينما القراءة خارج اختيار درجة الوقف تبدأ من عام 2022."
+  }
+}

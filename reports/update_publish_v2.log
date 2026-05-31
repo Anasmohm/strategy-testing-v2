@@ -787,6 +787,7 @@ Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_port
 [2026-05-20 16:07:13] netlify deploy failed with exit code 1
 [2026-05-20 16:07:13] running netlify deploy: C:\Program Files\WindowsApps\OpenAI.Codex_26.513.4821.0_x64__2p2nqsd0c76g0\app\resources\node.EXE C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
 [2026-05-20 16:07:13] netlify command permission error: [WinError 5] Access is denied
+<<<<<<< HEAD
 [2026-05-21 13:06:06] starting V2 GitHub Pages update
 [2026-05-21 13:06:07] market data refreshed: AMD through 2026-05-20
 [2026-05-21 13:06:07] market data refreshed: ANET through 2026-05-20
@@ -1047,3 +1048,229 @@ Analytics: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/pap
 [2026-05-30 05:55:57] running prepare GitHub Pages: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/prepare_github_pages.py
 [2026-05-30 05:55:57] Prepared GitHub Pages folder: /home/runner/work/strategy-testing-v2/strategy-testing-v2/publish_dashboard
 [2026-05-30 05:55:57] finished V2 GitHub Pages update
+=======
+[2026-05-24 16:47:02] starting approved V3.1 update and publish
+[2026-05-24 16:47:03] market data refreshed: AMD through 2026-05-22
+[2026-05-24 16:47:04] market data refreshed: ANET through 2026-05-22
+[2026-05-24 16:47:05] market data refreshed: AVGO through 2026-05-22
+[2026-05-24 16:47:05] market data refreshed: LRCX through 2026-05-22
+[2026-05-24 16:47:06] market data refreshed: MRVL through 2026-05-22
+[2026-05-24 16:47:07] market data refreshed: NVDA through 2026-05-22
+[2026-05-24 16:47:08] market data refreshed: PANW through 2026-05-22
+[2026-05-24 16:47:08] market data refreshed: SHOP through 2026-05-22
+[2026-05-24 16:47:09] market data refreshed: TSLA through 2026-05-22
+[2026-05-24 16:47:10] market data refreshed: QQQ through 2026-05-22
+[2026-05-24 16:47:11] market data refreshed: SPY through 2026-05-22
+[2026-05-24 16:47:12] market data refreshed: SOXX through 2026-05-22
+[2026-05-24 16:47:12] running build V2 baseline: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-24 16:47:38] Financial diagnostics lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\financial_diagnostics_lab.html
+Business intelligence lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\business_intelligence_lab.html
+Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+Portfolio value: 3520831.02
+Trades: 344
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-24 16:47:38] running build V3 raw rebuild: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v3_rebuild.py
+[2026-05-24 16:50:18] Testing AMD: 3328 candidates
+Testing ANET: 3328 candidates
+Testing AVGO: 3328 candidates
+Testing LRCX: 3328 candidates
+Testing MRVL: 3328 candidates
+Testing NVDA: 3328 candidates
+Testing PANW: 3328 candidates
+Testing SHOP: 3328 candidates
+Testing TSLA: 3328 candidates
+V3 raw strategies: 18
+V3 raw value: 4375973.19
+Candidates: 29952
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v3_dashboard.html
+[2026-05-24 16:50:18] running build approved V3.1 portfolio: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v31.py
+[2026-05-24 16:51:04] Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+V3.1 strategies: 17
+V3.1 value: 5828252.66
+Comparison dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_dashboard.html
+Official dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_dashboard.html
+Official analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+Simulation: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_simulation.html
+[2026-05-24 16:51:04] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-24 16:51:05] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-24 16:51:05] running prepare netlify publish: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_netlify_publish.py
+[2026-05-24 16:51:05] Prepared Netlify publish folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-24 16:51:05] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-24 16:52:25] آ»   JSONHTTPError: Forbidden
+[2026-05-24 16:52:25] netlify deploy failed with exit code 1
+[2026-05-24 16:52:25] running netlify deploy: C:\Users\anasbinessa\AppData\Roaming\npm\netlify.cmd deploy --prod
+[2026-05-24 16:52:33] آ»   JSONHTTPError: Forbidden
+[2026-05-24 16:52:33] netlify deploy failed with exit code 1
+[2026-05-24 16:52:33] running netlify deploy: C:\Program Files\nodejs\node.exe C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-24 16:52:41] آ»   JSONHTTPError: Forbidden
+[2026-05-24 16:52:41] netlify deploy failed with exit code 1
+[2026-05-24 16:52:41] running netlify deploy: C:\Program Files\nodejs\node.EXE C:\Users\anasbinessa\AppData\Roaming\npm\node_modules\netlify-cli\bin\run.js deploy --prod
+[2026-05-24 16:52:49] آ»   JSONHTTPError: Forbidden
+[2026-05-24 16:52:49] netlify deploy failed with exit code 1
+[2026-05-24 16:56:08] starting approved V3.1 GitHub Pages update
+[2026-05-24 16:56:09] market data refreshed: AMD through 2026-05-22
+[2026-05-24 16:56:09] market data refreshed: ANET through 2026-05-22
+[2026-05-24 16:56:10] market data refreshed: AVGO through 2026-05-22
+[2026-05-24 16:56:11] market data refreshed: LRCX through 2026-05-22
+[2026-05-24 16:56:12] market data refreshed: MRVL through 2026-05-22
+[2026-05-24 16:56:12] market data refreshed: NVDA through 2026-05-22
+[2026-05-24 16:56:13] market data refreshed: PANW through 2026-05-22
+[2026-05-24 16:56:14] market data refreshed: SHOP through 2026-05-22
+[2026-05-24 16:56:15] market data refreshed: TSLA through 2026-05-22
+[2026-05-24 16:56:15] market data refreshed: QQQ through 2026-05-22
+[2026-05-24 16:56:16] market data refreshed: SPY through 2026-05-22
+[2026-05-24 16:56:17] market data refreshed: SOXX through 2026-05-22
+[2026-05-24 16:56:17] running build V2 baseline: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-24 16:56:29] Financial diagnostics lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\financial_diagnostics_lab.html
+Business intelligence lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\business_intelligence_lab.html
+Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+Portfolio value: 3520831.02
+Trades: 344
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-24 16:56:29] running build V3 raw rebuild: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v3_rebuild.py
+[2026-05-24 16:57:22] Testing AMD: 3328 candidates
+Testing ANET: 3328 candidates
+Testing AVGO: 3328 candidates
+Testing LRCX: 3328 candidates
+Testing MRVL: 3328 candidates
+Testing NVDA: 3328 candidates
+Testing PANW: 3328 candidates
+Testing SHOP: 3328 candidates
+Testing TSLA: 3328 candidates
+V3 raw strategies: 18
+V3 raw value: 4375973.19
+Candidates: 29952
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v3_dashboard.html
+[2026-05-24 16:57:22] running build approved V3.1 dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v31.py
+[2026-05-24 16:57:41] Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+V3.1 strategies: 17
+V3.1 value: 5828252.66
+Comparison dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_dashboard.html
+Official dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_dashboard.html
+Official analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+Simulation: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_simulation.html
+[2026-05-24 16:57:41] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-24 16:57:41] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-24 16:57:41] running prepare GitHub Pages: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_github_pages.py
+[2026-05-24 16:57:41] Prepared GitHub Pages folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-24 16:57:41] finished approved V3.1 GitHub Pages update
+[2026-05-24 16:59:43] starting approved V3.1 GitHub Pages update
+[2026-05-24 16:59:44] market data refreshed: AMD through 2026-05-22
+[2026-05-24 16:59:45] market data refreshed: ANET through 2026-05-22
+[2026-05-24 16:59:45] market data refreshed: AVGO through 2026-05-22
+[2026-05-24 16:59:46] market data refreshed: LRCX through 2026-05-22
+[2026-05-24 16:59:47] market data refreshed: MRVL through 2026-05-22
+[2026-05-24 16:59:48] market data refreshed: NVDA through 2026-05-22
+[2026-05-24 16:59:48] market data refreshed: PANW through 2026-05-22
+[2026-05-24 16:59:50] market data refreshed: SHOP through 2026-05-22
+[2026-05-24 16:59:50] market data refreshed: TSLA through 2026-05-22
+[2026-05-24 16:59:51] market data refreshed: QQQ through 2026-05-22
+[2026-05-24 16:59:52] market data refreshed: SPY through 2026-05-22
+[2026-05-24 16:59:53] market data refreshed: SOXX through 2026-05-22
+[2026-05-24 16:59:53] running build V2 baseline: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-24 17:00:19] Financial diagnostics lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\financial_diagnostics_lab.html
+Business intelligence lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\business_intelligence_lab.html
+Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+Portfolio value: 350282.34
+Trades: 344
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-24 17:00:19] running build V3 raw rebuild: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v3_rebuild.py
+[2026-05-24 17:02:52] Testing AMD: 3328 candidates
+Testing ANET: 3328 candidates
+Testing AVGO: 3328 candidates
+Testing LRCX: 3328 candidates
+Testing MRVL: 3328 candidates
+Testing NVDA: 3328 candidates
+Testing PANW: 3328 candidates
+Testing SHOP: 3328 candidates
+Testing TSLA: 3328 candidates
+V3 raw strategies: 18
+V3 raw value: 434796.19
+Candidates: 29952
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v3_dashboard.html
+[2026-05-24 17:02:52] running build approved V3.1 dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v31.py
+[2026-05-24 17:03:38] Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+V3.1 strategies: 17
+V3.1 value: 580016.55
+Comparison dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_dashboard.html
+Official dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_dashboard.html
+Official analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+Simulation: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_simulation.html
+[2026-05-24 17:03:38] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-24 17:03:39] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-24 17:03:39] running prepare GitHub Pages: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_github_pages.py
+[2026-05-24 17:03:39] Prepared GitHub Pages folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-24 17:03:39] finished approved V3.1 GitHub Pages update
+[2026-05-24 20:49:58] starting approved V3.1 GitHub Pages update
+[2026-05-24 20:50:00] market data refreshed: AMD through 2026-05-22
+[2026-05-24 20:50:00] market data refreshed: ANET through 2026-05-22
+[2026-05-24 20:50:02] market data refreshed: AVGO through 2026-05-22
+[2026-05-24 20:50:03] market data refreshed: LRCX through 2026-05-22
+[2026-05-24 20:50:05] market data refreshed: MRVL through 2026-05-22
+[2026-05-24 20:50:06] market data refreshed: NVDA through 2026-05-22
+[2026-05-24 20:50:07] market data refreshed: PANW through 2026-05-22
+[2026-05-24 20:50:08] market data refreshed: SHOP through 2026-05-22
+[2026-05-24 20:50:10] market data refreshed: TSLA through 2026-05-22
+[2026-05-24 20:50:11] market data refreshed: QQQ through 2026-05-22
+[2026-05-24 20:50:12] market data refreshed: SPY through 2026-05-22
+[2026-05-24 20:50:14] market data refreshed: SOXX through 2026-05-22
+[2026-05-24 20:50:14] running build V2 baseline: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v2.py
+[2026-05-24 20:50:38] Financial diagnostics lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\financial_diagnostics_lab.html
+Business intelligence lab: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\business_intelligence_lab.html
+Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+Portfolio value: 115443.08
+Trades: 344
+Approved strategies: 12
+Rejected strategies: 0
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_dashboard.html
+Analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v2_analytics.html
+[2026-05-24 20:50:38] running build V3 raw rebuild: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v3_rebuild.py
+[2026-05-24 20:51:34] Testing AMD: 3328 candidates
+Testing ANET: 3328 candidates
+Testing AVGO: 3328 candidates
+Testing LRCX: 3328 candidates
+Testing MRVL: 3328 candidates
+Testing NVDA: 3328 candidates
+Testing PANW: 3328 candidates
+Testing SHOP: 3328 candidates
+Testing TSLA: 3328 candidates
+V3 raw strategies: 18
+V3 raw value: 143149.89
+Candidates: 29952
+Dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v3_dashboard.html
+[2026-05-24 20:51:34] running build approved V3.1 dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v31.py
+[2026-05-24 20:51:53] Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+V3.1 strategies: 17
+V3.1 value: 190516.03
+Comparison dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_dashboard.html
+Official dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_dashboard.html
+Official analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+Simulation: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_simulation.html
+[2026-05-24 20:51:53] running build strategy diagnosis: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\build_dashboard.py
+[2026-05-24 20:51:53] Dashboard written: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\strategy_v2_dashboard.html
+[2026-05-24 20:51:53] running prepare GitHub Pages: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_github_pages.py
+[2026-05-24 20:51:53] Prepared GitHub Pages folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-24 20:51:53] finished approved V3.1 GitHub Pages update
+[2026-05-25 16:25:11] starting approved V3.1 GitHub Pages update
+[2026-05-25 16:26:13] EODHD 5m official market data refreshed through available sessions up to 2026-05-25
+[2026-05-25 16:26:13] running build approved V3.1 dashboard: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\paper_portfolio_v31.py
+[2026-05-25 16:26:41] Decision analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+V3.1 strategies: 17
+V3.1 value: 42608.84
+Comparison dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_dashboard.html
+Official dashboard: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_dashboard.html
+Official analytics: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\portfolio_analytics.html
+Simulation: C:\Users\anasbinessa\Documents\Strategy Testing V2\reports\paper_portfolio_v31_simulation.html
+[2026-05-25 16:26:41] running prepare GitHub Pages: C:\Users\anasbinessa\AppData\Local\Programs\Python\Python312\python.exe C:\Users\anasbinessa\Documents\Strategy Testing V2\prepare_github_pages.py
+[2026-05-25 16:26:41] Prepared GitHub Pages folder: C:\Users\anasbinessa\Documents\Strategy Testing V2\publish_dashboard
+[2026-05-25 16:26:41] finished approved V3.1 GitHub Pages update
+>>>>>>> c375ffa (Adopt approved portfolio dashboard)

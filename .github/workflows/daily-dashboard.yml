@@ -1,4 +1,4 @@
-name: Daily V2 dashboard update
+name: Daily approved V3.1 dashboard update
 
 on:
   workflow_dispatch:
@@ -32,13 +32,15 @@ jobs:
           python-version: "3.12"
 
       - name: Refresh data and build dashboards
-        run: python update_github_pages_v2.py
+        env:
+          EODHD_API_TOKEN: ${{ secrets.EODHD_API_TOKEN }}
+        run: python update_github_pages.py
 
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/market_data reports publish_dashboard
+          git add reports publish_dashboard
           if git diff --cached --quiet; then
             echo "No refreshed files to commit."
           else

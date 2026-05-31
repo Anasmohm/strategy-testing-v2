@@ -9,7 +9,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-import diagnose_stocks
+import eodhd_official_data
 
 
 ROOT = Path(__file__).resolve().parent
@@ -37,18 +37,15 @@ def selected_tickers() -> list[str]:
 
 
 def refresh_market_data() -> None:
-    errors: list[str] = []
-    tickers = list(dict.fromkeys(selected_tickers() + MARKET_BENCHMARKS))
-    for ticker in tickers:
-        try:
-            bars = diagnose_stocks.load_incremental_bars(ticker)
-            last_date = bars[-1].date.isoformat() if bars else "no-data"
-            log(f"market data refreshed: {ticker} through {last_date}")
-        except Exception as exc:
-            errors.append(f"{ticker}: {exc}")
-            log(f"market data refresh failed: {ticker}: {exc}")
-    if errors:
-        (REPORTS / "update_market_errors.txt").write_text("\n".join(errors), encoding="utf-8")
+    end = dt.datetime.now(tz=dt.timezone.utc).date()
+    try:
+        eodhd_official_data.refresh(eodhd_official_data.configured_warmup_start(), end)
+        log(f"EODHD 5m official market data refreshed through available sessions up to {end.isoformat()}")
+    except Exception as exc:
+        cached = all(eodhd_official_data.intraday_path(ticker).exists() for ticker in eodhd_official_data.configured_symbols())
+        if not cached:
+            raise
+        log(f"EODHD refresh unavailable; rebuilding from existing cached 5m data: {exc}")
 
 
 def run_step(args: list[str], label: str, required: bool = True) -> bool:
@@ -101,13 +98,12 @@ def deploy_to_netlify() -> None:
 
 
 def main() -> int:
-    log("starting V2 update and publish")
+    log("starting approved V3.1 update and publish")
     refresh_market_data()
-    run_step([sys.executable, str(ROOT / "paper_portfolio_v2.py")], "build dashboard")
-    run_step([sys.executable, str(ROOT / "build_dashboard.py")], "build strategy diagnosis")
+    run_step([sys.executable, str(ROOT / "paper_portfolio_v31.py")], "build approved V3.1 portfolio")
     run_step([sys.executable, str(ROOT / "prepare_netlify_publish.py")], "prepare netlify publish")
     deploy_to_netlify()
-    log("finished V2 update and publish")
+    log("finished approved V3.1 update and publish")
     return 0
 
 

@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مختبر ذكاء الأعمال</title>
+  <style>
+    :root {
+      --bg:#f4f7fa; --panel:#fff; --text:#061629; --muted:#61738a; --line:#d7e2ec;
+      --blue:#1d6597; --green:#14745f; --red:#a8373d; --amber:#a66b00; --soft:#eaf1f7;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Tahoma, Arial, sans-serif; line-height:1.65; }
+    .wrap { max-width:1540px; margin:0 auto; padding:22px; }
+    header { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; margin-bottom:16px; }
+    h1 { margin:0; font-size:32px; }
+    h2 { margin:0 0 12px; font-size:22px; }
+    h3 { margin:0 0 8px; font-size:17px; }
+    a { color:var(--blue); text-decoration:none; }
+    .sub,.note,small { color:var(--muted); }
+    .nav { display:flex; flex-wrap:wrap; gap:8px; }
+    .btn,select,input { border:1px solid var(--line); border-radius:8px; padding:9px 11px; background:#fff; font:inherit; color:var(--text); }
+    .btn.primary,.tabs button.active { background:var(--blue); color:#fff; border-color:var(--blue); }
+    .badge { display:inline-flex; border:1px solid #f0c572; background:#fff8e7; color:#7b5200; border-radius:999px; padding:4px 10px; margin-top:8px; }
+    .grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+    .two { display:grid; grid-template-columns:1.1fr .9fr; gap:14px; margin-top:14px; }
+    .panel,.metric,.decision-card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .metric span,.decision-card span { color:var(--muted); display:block; }
+    .metric strong { display:block; direction:ltr; text-align:right; font-size:31px; margin-top:8px; }
+    .decision-card strong { display:block; font-size:25px; margin:7px 0; }
+    .decision-card p { margin:0; color:var(--muted); }
+    .decision-card.pos { border-color:#b8dccf; }
+    .decision-card.warn { border-color:#f0c572; background:#fffdf8; }
+    .decision-card.neg { border-color:#e3a6a6; }
+    .tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+    table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    th,td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:right; vertical-align:top; }
+    th { background:var(--soft); color:#24364d; }
+    tbody tr:hover { background:#f8fbfd; }
+    .num { direction:ltr; text-align:right; font-variant-numeric:tabular-nums; }
+    .ltr { direction:ltr; unicode-bidi:isolate; display:inline-block; }
+    .pos { color:var(--green); font-weight:800; }
+    .neg { color:var(--red); font-weight:800; }
+    .warn { color:var(--amber); font-weight:800; }
+    .bar-track { height:12px; background:#eef3f7; border-radius:999px; overflow:hidden; min-width:120px; direction:ltr; }
+    .bar { height:100%; border-radius:999px; background:var(--blue); }
+    .bar.negbar { background:var(--red); }
+    .bridge-row { display:grid; grid-template-columns:130px 1fr 150px; gap:12px; align-items:center; margin:10px 0; }
+    .table-wrap { overflow:auto; }
+    @media (max-width:1050px) {
+      header { display:block; }
+      .grid,.two { grid-template-columns:1fr; }
+      .nav { margin-top:12px; }
+      .bridge-row { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>مختبر ذكاء الأعمال</h1>
+        <div class="sub">قراءة تنفيذية للمحفظة: الهدف، الانحراف، محركات الربح، تركيز المخاطر، والقرار التالي.</div>
+        <div class="badge">آخر توليد: 2026-05-24 20:50</div>
+      </div>
+      <nav class="nav">
+        <a class="btn" href="paper_portfolio_v2_dashboard.html">المحفظة</a>
+        <a class="btn" href="paper_portfolio_v2_analytics.html">التحليلات</a>
+        <a class="btn" href="strategy_v2_dashboard.html">التشخيص</a>
+        <a class="btn primary" href="business_intelligence_lab.html">ذكاء الأعمال</a>
+      </nav>
+    </header>
+
+    <section class="grid">
+      <article class="metric">
+        <span>قيمة المحفظة</span>
+        <strong class="pos">$115,443.08</strong>
+        <small>حتى 2026-05-22</small>
+      </article>
+    
+
+      <article class="metric">
+        <span>عائد الفترة</span>
+        <strong class="pos">1,054.43%</strong>
+        <small>من 2024-01-02</small>
+      </article>
+    
+
+      <article class="metric">
+        <span>فائض الهدف</span>
+        <strong class="pos">$79,998.96</strong>
+        <small>هدف الفترة 254.44%</small>
+      </article>
+    
+
+      <article class="metric">
+        <span>السحب الأقصى</span>
+        <strong class="neg">-9.95%</strong>
+        <small>أكبر تراجع من قمة تاريخية</small>
+      </article>
+    
+
+      <article class="metric">
+        <span>جودة الربح</span>
+        <strong class="pos">0.51</strong>
+        <small>متوسط رابحة 3.38% / خاسرة -6.69%</small>
+      </article>
+    
+
+      <article class="metric">
+        <span>تركيز أعلى 3</span>
+        <strong class="pos">51.92%</strong>
+        <small>أكبر مصدر AMD</small>
+      </article>
+    
+
+      <article class="metric">
+        <span>الانكشاف المفتوح</span>
+        <strong class="warn">59.12%</strong>
+        <small>ربح/خسارة مفتوحة $-3,510.52</small>
+      </article>
+    
+
+      <article class="metric">
+        <span>فرق V2 عن V1</span>
+        <strong class="neg">$-9,203.39</strong>
+        <small>أفضل في 2 / أضعف في 7</small>
+      </article>
+    </section>
+
+    <section style="margin-top:14px;">
+      <h2>مركز القرار التنفيذي</h2>
+      <div class="grid">
+        <article class="decision-card pos">
+          <span>الهدف السنوي</span>
+          <strong>متجاوز</strong>
+          <p>عائد الفترة أعلى من هدف 70% سنويًا بفارق 799.99%.</p>
+        </article>
+        
+
+        <article class="decision-card pos">
+          <span>تركيز الربح</span>
+          <strong>51.92%</strong>
+          <p>الربح مركز في أعلى 3 أسهم؛ زيادة الوزن تحتاج مراقبة حتى لا يصبح القرار معتمدًا على سهم واحد.</p>
+        </article>
+        
+
+        <article class="decision-card warn">
+          <span>الصفقات المفتوحة</span>
+          <strong>2 عالية الخطر</strong>
+          <p>الربح غير المحقق الحالي $-3,510.52، والانكشاف المفتوح 59.12%.</p>
+        </article>
+        
+
+        <article class="decision-card neg">
+          <span>اختيار النسخة</span>
+          <strong>$-9,203.39</strong>
+          <p>مقارنة التسعة أسهم: V2 أفضل في 2 وأضعف في 7 أسهم.</p>
+        </article>
+        
+
+        <article class="decision-card pos">
+          <span>نبض السوق</span>
+          <strong>داعم</strong>
+          <p>مؤشرات السوق الحالية داعمة لاستمرار المتابعة، لكنها لا تعفي من إدارة الانكشاف المفتوح.</p>
+        </article>
+        </div>
+    </section>
+
+    <section class="two">
+      <div class="panel">
+        <h2>جسر الهدف إلى النتيجة</h2>
+        
+        <div class="bridge-row">
+          <span>رأس المال</span>
+          <div class="bar-track"><div class="bar " style="width:8.7%"></div></div>
+          <strong class="num pos">$10,000.00</strong>
+        </div>
+        
+
+        <div class="bridge-row">
+          <span>قيمة الهدف</span>
+          <div class="bar-track"><div class="bar " style="width:30.7%"></div></div>
+          <strong class="num pos">$35,444.12</strong>
+        </div>
+        
+
+        <div class="bridge-row">
+          <span>الفائض عن الهدف</span>
+          <div class="bar-track"><div class="bar " style="width:69.3%"></div></div>
+          <strong class="num pos">$79,998.96</strong>
+        </div>
+        
+
+        <div class="bridge-row">
+          <span>القيمة الحالية</span>
+          <div class="bar-track"><div class="bar " style="width:100.0%"></div></div>
+          <strong class="num pos">$115,443.08</strong>
+        </div>
+        
+      </div>
+      <div class="panel table-wrap">
+        <h2>الصفقات المفتوحة تحت القرار</h2>
+        <table>
+          <thead><tr><th>السهم</th><th>الاستراتيجية</th><th>ربح/خسارة</th><th>الترند</th><th>الخطر</th><th>النتيجة</th></tr></thead>
+          <tbody>
+        <tr>
+          <td><strong class="ltr">NVDA</strong></td>
+          <td>v1_success_monthly</td>
+          <td class="num neg">-8.66%</td>
+          <td>صاعد قوي</td>
+          <td class="neg">مرتفع</td>
+          <td class="num">96.08</td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">MRVL</strong></td>
+          <td>v1_success_monthly</td>
+          <td class="num pos">0.00%</td>
+          <td>صاعد قوي</td>
+          <td class="neg">مرتفع</td>
+          <td class="num">85.0</td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:14px;">
+      <h2>محركات الربح والخسارة</h2>
+      <div class="tabs">
+        <button class="btn active" data-dim="ticker">السهم</button>
+        <button class="btn" data-dim="timeframe">الإطار</button>
+        <button class="btn" data-dim="behavior">السلوك</button>
+        <button class="btn" data-dim="entry_month">الشهر</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>البعد</th><th>صفقات</th><th>مغلقة</th><th>فوز</th><th>الربح</th><th>متوسط %</th><th>أسوأ %</th><th>الأثر</th></tr></thead>
+          <tbody id="driverRows">
+        <tr>
+          <td><strong class="ltr">AMD</strong></td>
+          <td class="num">56</td>
+          <td class="num">56</td>
+          <td class="num">85.71%</td>
+          <td class="num pos">$27,429.84</td>
+          <td class="num pos">2.64%</td>
+          <td class="num neg">-11.94%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:100.0%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">MRVL</strong></td>
+          <td class="num">35</td>
+          <td class="num">34</td>
+          <td class="num">94.12%</td>
+          <td class="num pos">$14,608.04</td>
+          <td class="num pos">2.42%</td>
+          <td class="num neg">-16.15%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:53.3%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">NVDA</strong></td>
+          <td class="num">60</td>
+          <td class="num">59</td>
+          <td class="num">98.31%</td>
+          <td class="num pos">$12,705.52</td>
+          <td class="num pos">2.47%</td>
+          <td class="num neg">-7.80%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:46.3%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">AVGO</strong></td>
+          <td class="num">51</td>
+          <td class="num">51</td>
+          <td class="num">78.43%</td>
+          <td class="num pos">$12,260.62</td>
+          <td class="num pos">1.70%</td>
+          <td class="num neg">-10.79%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:44.7%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">TSLA</strong></td>
+          <td class="num">30</td>
+          <td class="num">30</td>
+          <td class="num">96.67%</td>
+          <td class="num pos">$11,402.00</td>
+          <td class="num pos">3.38%</td>
+          <td class="num neg">-10.59%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:41.6%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">ANET</strong></td>
+          <td class="num">37</td>
+          <td class="num">37</td>
+          <td class="num">89.19%</td>
+          <td class="num pos">$10,307.25</td>
+          <td class="num pos">2.30%</td>
+          <td class="num neg">-12.05%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:37.6%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">SHOP</strong></td>
+          <td class="num">23</td>
+          <td class="num">23</td>
+          <td class="num">86.96%</td>
+          <td class="num pos">$6,704.13</td>
+          <td class="num pos">2.36%</td>
+          <td class="num neg">-6.43%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:24.4%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">LRCX</strong></td>
+          <td class="num">40</td>
+          <td class="num">40</td>
+          <td class="num">85.00%</td>
+          <td class="num pos">$6,307.05</td>
+          <td class="num pos">1.03%</td>
+          <td class="num neg">-13.36%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:23.0%"></div></div>
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td><strong class="ltr">PANW</strong></td>
+          <td class="num">12</td>
+          <td class="num">12</td>
+          <td class="num">100.00%</td>
+          <td class="num pos">$3,718.65</td>
+          <td class="num pos">3.67%</td>
+          <td class="num neg">1.00%</td>
+          <td>
+            <div class="bar-track"><div class="bar " style="width:13.6%"></div></div>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="two">
+      <div class="panel table-wrap">
+        <h2>تعريفات المقاييس</h2>
+        <table><thead><tr><th>المقياس</th><th>طريقة الحساب</th><th>استخدامه في القرار</th></tr></thead><tbody><tr><td>عائد الفترة</td><td>قيمة المحفظة الحالية ÷ رأس المال - 1</td><td>قياس العائد الفعلي بدون تضخيم سنوي</td></tr>
+<tr><td>فائض الهدف</td><td>قيمة المحفظة الحالية - قيمة هدف 70% سنويًا</td><td>هل الأداء يتجاوز الحد الأدنى المقبول</td></tr>
+<tr><td>تركيز الربح</td><td>ربح أعلى 3 أسهم ÷ ربح المحفظة</td><td>اختبار الاعتماد الزائد على عدد قليل من الأسهم</td></tr>
+<tr><td>الانكشاف المفتوح</td><td>قيمة الصفقات المفتوحة ÷ قيمة المحفظة</td><td>حجم الخطر الحي مقارنة بالمحفظة</td></tr>
+<tr><td>جودة الربح</td><td>متوسط الرابح ÷ متوسط الخاسر</td><td>هل الأرباح تغطي طبيعة الخسائر</td></tr></tbody></table>
+      </div>
+      <div class="panel table-wrap">
+        <h2>مقارنة V2 مع V1 على التسعة أسهم</h2>
+        <table>
+          <thead><tr><th>الجانب</th><th>القيمة</th><th>القراءة</th></tr></thead>
+          <tbody>
+            <tr><td>ربح V1</td><td class="num">$114,646.49</td><td>المرجع السابق</td></tr>
+            <tr><td>ربح V2</td><td class="num">$105,443.10</td><td>النسخة الحالية</td></tr>
+            <tr><td>الفرق</td><td class="num neg">$-9,203.39</td><td>فرق اختيار الاستراتيجية على نفس الأسهم</td></tr>
+            <tr><td>أفضل أسهم V2</td><td colspan="2">AMD, MRVL</td></tr>
+            <tr><td>أضعف أسهم V2</td><td colspan="2">NVDA, TSLA, ANET</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const BI_DIMENSIONS = {"ticker": [{"name": "AMD", "trades": 56, "closed": 56, "open": 0, "wins": 48, "losses": 8, "win_rate": 85.71428571428571, "pnl": 27429.84, "avg_pct": 2.637857142857143, "worst_pct": -11.94, "contribution_pct": 26.013883509472596}, {"name": "MRVL", "trades": 35, "closed": 34, "open": 1, "wins": 32, "losses": 2, "win_rate": 94.11764705882352, "pnl": 14608.04, "avg_pct": 2.419142857142857, "worst_pct": -16.15, "contribution_pct": 13.853957983776652}, {"name": "NVDA", "trades": 60, "closed": 59, "open": 1, "wins": 58, "losses": 1, "win_rate": 98.30508474576271, "pnl": 12705.52, "avg_pct": 2.4699999999999998, "worst_pct": -7.8, "contribution_pct": 12.04964801862768}, {"name": "AVGO", "trades": 51, "closed": 51, "open": 0, "wins": 40, "losses": 11, "win_rate": 78.43137254901961, "pnl": 12260.619999999999, "avg_pct": 1.696078431372549, "worst_pct": -10.79, "contribution_pct": 11.627714213203937}, {"name": "TSLA", "trades": 30, "closed": 30, "open": 0, "wins": 29, "losses": 1, "win_rate": 96.66666666666667, "pnl": 11402.0, "avg_pct": 3.380333333333333, "worst_pct": -10.59, "contribution_pct": 10.813417058758148}, {"name": "ANET", "trades": 37, "closed": 37, "open": 0, "wins": 33, "losses": 4, "win_rate": 89.1891891891892, "pnl": 10307.25, "avg_pct": 2.3024324324324326, "worst_pct": -12.05, "contribution_pct": 9.775179177239512}, {"name": "SHOP", "trades": 23, "closed": 23, "open": 0, "wins": 20, "losses": 3, "win_rate": 86.95652173913044, "pnl": 6704.13, "avg_pct": 2.358695652173913, "worst_pct": -6.43, "contribution_pct": 6.358055929322247}, {"name": "LRCX", "trades": 40, "closed": 40, "open": 0, "wins": 34, "losses": 6, "win_rate": 85.0, "pnl": 6307.05, "avg_pct": 1.0345, "worst_pct": -13.36, "contribution_pct": 5.981473606423485}, {"name": "PANW", "trades": 12, "closed": 12, "open": 0, "wins": 12, "losses": 0, "win_rate": 100.0, "pnl": 3718.65, "avg_pct": 3.6666666666666665, "worst_pct": 1.0, "contribution_pct": 3.5266894707552168}], "timeframe": [{"name": "swing", "trades": 205, "closed": 205, "open": 0, "wins": 178, "losses": 27, "win_rate": 86.82926829268293, "pnl": 66059.55, "avg_pct": 2.34009756097561, "worst_pct": -13.36, "contribution_pct": 62.64948823573818}, {"name": "monthly", "trades": 139, "closed": 137, "open": 2, "wins": 128, "losses": 9, "win_rate": 93.43065693430657, "pnl": 39383.55, "avg_pct": 2.2561151079136694, "worst_pct": -16.15, "contribution_pct": 37.350530731841296}], "behavior": [{"name": "v1_success_swing", "trades": 205, "closed": 205, "open": 0, "wins": 178, "losses": 27, "win_rate": 86.82926829268293, "pnl": 66059.55, "avg_pct": 2.34009756097561, "worst_pct": -13.36, "contribution_pct": 62.64948823573818}, {"name": "v1_success_monthly", "trades": 139, "closed": 137, "open": 2, "wins": 128, "losses": 9, "win_rate": 93.43065693430657, "pnl": 39383.55, "avg_pct": 2.2561151079136694, "worst_pct": -16.15, "contribution_pct": 37.350530731841296}], "entry_month": [{"name": "2026-04", "trades": 31, "closed": 31, "open": 0, "wins": 28, "losses": 3, "win_rate": 90.32258064516128, "pnl": 25652.03, "avg_pct": 3.3509677419354835, "worst_pct": -7.91, "contribution_pct": 24.327845886140654}, {"name": "2026-05", "trades": 19, "closed": 17, "open": 2, "wins": 15, "losses": 2, "win_rate": 88.23529411764706, "pnl": 15809.539999999999, "avg_pct": 2.683684210526316, "worst_pct": -11.94, "contribution_pct": 14.993435320743664}, {"name": "2025-10", "trades": 17, "closed": 17, "open": 0, "wins": 17, "losses": 0, "win_rate": 100.0, "pnl": 10123.17, "avg_pct": 4.352941176470588, "worst_pct": 1.0, "contribution_pct": 9.600601575750632}, {"name": "2026-02", "trades": 7, "closed": 7, "open": 0, "wins": 7, "losses": 0, "win_rate": 100.0, "pnl": 6890.92, "avg_pct": 4.428571428571429, "worst_pct": 2.0, "contribution_pct": 6.535203637830003}, {"name": "2025-04", "trades": 12, "closed": 12, "open": 0, "wins": 10, "losses": 2, "win_rate": 83.33333333333334, "pnl": 4771.61, "avg_pct": 4.414166666666667, "worst_pct": -13.36, "contribution_pct": 4.525294594960617}, {"name": "2025-09", "trades": 8, "closed": 8, "open": 0, "wins": 8, "losses": 0, "win_rate": 100.0, "pnl": 4597.7, "avg_pct": 3.25, "worst_pct": 1.0, "contribution_pct": 4.36036200763483}, {"name": "2025-07", "trades": 15, "closed": 15, "open": 0, "wins": 15, "losses": 0, "win_rate": 100.0, "pnl": 4420.36, "avg_pct": 2.3333333333333335, "worst_pct": 1.0, "contribution_pct": 4.192176480429062}, {"name": "2025-12", "trades": 12, "closed": 12, "open": 0, "wins": 12, "losses": 0, "win_rate": 100.0, "pnl": 4359.63, "avg_pct": 2.0833333333333335, "worst_pct": 1.0, "contribution_pct": 4.134581425352901}, {"name": "2026-03", "trades": 15, "closed": 15, "open": 0, "wins": 13, "losses": 2, "win_rate": 86.66666666666667, "pnl": 3177.45, "avg_pct": 1.268, "worst_pct": -7.64, "contribution_pct": 3.013426770158838}, {"name": "2024-12", "trades": 16, "closed": 16, "open": 0, "wins": 15, "losses": 1, "win_rate": 93.75, "pnl": 2690.6, "avg_pct": 1.865625, "worst_pct": -16.15, "contribution_pct": 2.5517084667860614}, {"name": "2025-01", "trades": 8, "closed": 8, "open": 0, "wins": 7, "losses": 1, "win_rate": 87.5, "pnl": 2294.52, "avg_pct": 2.7775, "worst_pct": -3.78, "contribution_pct": 2.1760745228610547}, {"name": "2025-06", "trades": 11, "closed": 11, "open": 0, "wins": 10, "losses": 1, "win_rate": 90.9090909090909, "pnl": 2134.56, "avg_pct": 1.7, "worst_pct": -6.3, "contribution_pct": 2.0243718222191536}, {"name": "2024-07", "trades": 18, "closed": 18, "open": 0, "wins": 16, "losses": 2, "win_rate": 88.88888888888889, "pnl": 1983.82, "avg_pct": 2.0683333333333334, "worst_pct": -10.79, "contribution_pct": 1.8814131757152768}, {"name": "2024-03", "trades": 15, "closed": 15, "open": 0, "wins": 13, "losses": 2, "win_rate": 86.66666666666667, "pnl": 1775.6399999999999, "avg_pct": 2.5113333333333334, "worst_pct": -11.18, "contribution_pct": 1.6839796409588943}, {"name": "2024-09", "trades": 9, "closed": 9, "open": 0, "wins": 8, "losses": 1, "win_rate": 88.88888888888889, "pnl": 1716.09, "avg_pct": 2.511111111111111, "worst_pct": -2.4, "contribution_pct": 1.6275036730717654}, {"name": "2025-05", "trades": 7, "closed": 7, "open": 0, "wins": 6, "losses": 1, "win_rate": 85.71428571428571, "pnl": 1623.33, "avg_pct": 1.3057142857142858, "worst_pct": -7.86, "contribution_pct": 1.5395320394662217}, {"name": "2026-01", "trades": 8, "closed": 8, "open": 0, "wins": 7, "losses": 1, "win_rate": 87.5, "pnl": 1565.37, "avg_pct": 1.04, "worst_pct": -8.68, "contribution_pct": 1.4845639941473636}, {"name": "2024-08", "trades": 7, "closed": 7, "open": 0, "wins": 6, "losses": 1, "win_rate": 85.71428571428571, "pnl": 1564.22, "avg_pct": 2.7785714285714285, "worst_pct": -4.55, "contribution_pct": 1.483473358327545}, {"name": "2024-06", "trades": 9, "closed": 9, "open": 0, "wins": 9, "losses": 0, "win_rate": 100.0, "pnl": 1548.22, "avg_pct": 2.888888888888889, "worst_pct": 1.0, "contribution_pct": 1.46829929474746}, {"name": "2024-01", "trades": 19, "closed": 19, "open": 0, "wins": 19, "losses": 0, "win_rate": 100.0, "pnl": 1538.83, "avg_pct": 2.6842105263157894, "worst_pct": 1.0, "contribution_pct": 1.4593940161838974}, {"name": "2024-11", "trades": 15, "closed": 15, "open": 0, "wins": 12, "losses": 3, "win_rate": 80.0, "pnl": 1521.77, "avg_pct": 1.7026666666666666, "worst_pct": -10.59, "contribution_pct": 1.4432146708916318}, {"name": "2024-02", "trades": 11, "closed": 11, "open": 0, "wins": 11, "losses": 0, "win_rate": 100.0, "pnl": 1470.8, "avg_pct": 3.272727272727273, "worst_pct": 1.0, "contribution_pct": 1.394875794599323}, {"name": "2024-05", "trades": 7, "closed": 7, "open": 0, "wins": 7, "losses": 0, "win_rate": 100.0, "pnl": 1337.63, "avg_pct": 3.142857142857143, "worst_pct": 1.0, "contribution_pct": 1.2685801666643273}, {"name": "2025-03", "trades": 9, "closed": 9, "open": 0, "wins": 7, "losses": 2, "win_rate": 77.77777777777779, "pnl": 1030.09, "avg_pct": 0.6633333333333333, "worst_pct": -6.24, "contribution_pct": 0.9769156970756164}, {"name": "2025-11", "trades": 6, "closed": 6, "open": 0, "wins": 4, "losses": 2, "win_rate": 66.66666666666666, "pnl": 551.29, "avg_pct": 0.3683333333333334, "worst_pct": -5.89, "contribution_pct": 0.5228318444415698}, {"name": "2025-08", "trades": 7, "closed": 7, "open": 0, "wins": 6, "losses": 1, "win_rate": 85.71428571428571, "pnl": 309.3699999999999, "avg_pct": 0.35571428571428576, "worst_pct": -9.51, "contribution_pct": 0.2934000031106829}, {"name": "2024-04", "trades": 11, "closed": 11, "open": 0, "wins": 7, "losses": 4, "win_rate": 63.63636363636363, "pnl": 44.04999999999997, "avg_pct": 0.5027272727272728, "worst_pct": -6.53, "contribution_pct": 0.04177609379392177}, {"name": "2024-10", "trades": 12, "closed": 12, "open": 0, "wins": 9, "losses": 3, "win_rate": 75.0, "pnl": 23.609999999999992, "avg_pct": 0.21583333333333332, "worst_pct": -6.44, "contribution_pct": 0.022391227570363072}, {"name": "2025-02", "trades": 3, "closed": 3, "open": 0, "wins": 2, "losses": 1, "win_rate": 66.66666666666666, "pnl": -1083.12, "avg_pct": -3.016666666666667, "worst_pct": -12.05, "contribution_pct": -1.0272082340538609}]};
+    function money(value) {
+      return '$' + Number(value || 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    }
+    function pct(value) {
+      return Number(value || 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '%';
+    }
+    function tone(value) {
+      return Number(value || 0) >= 0 ? 'pos' : 'neg';
+    }
+    function maxAbs(rows) {
+      return Math.max(1, ...rows.map(row => Math.abs(Number(row.pnl || 0))));
+    }
+    function renderRows(dim) {
+      const rows = BI_DIMENSIONS[dim] || [];
+      const max = maxAbs(rows);
+      document.getElementById('driverRows').innerHTML = rows.map(row => {
+        const width = Math.min(Math.abs(Number(row.pnl || 0)) / max * 100, 100).toFixed(1) + '%';
+        return `<tr>
+          <td><strong class="ltr">${row.name}</strong></td>
+          <td class="num">${row.trades}</td>
+          <td class="num">${row.closed}</td>
+          <td class="num">${pct(row.win_rate)}</td>
+          <td class="num ${tone(row.pnl)}">${money(row.pnl)}</td>
+          <td class="num ${tone(row.avg_pct)}">${pct(row.avg_pct)}</td>
+          <td class="num neg">${pct(row.worst_pct)}</td>
+          <td><div class="bar-track"><div class="bar ${Number(row.pnl || 0) < 0 ? 'negbar' : ''}" style="width:${width}"></div></div></td>
+        </tr>`;
+      }).join('');
+    }
+    document.querySelectorAll('.tabs button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.tabs button').forEach(item => item.classList.toggle('active', item === button));
+        renderRows(button.dataset.dim);
+      });
+    });
+  </script>
+</body>
+</html>

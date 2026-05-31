@@ -1,0 +1,16 @@
+{
+  "registry_owner": "chief_executive",
+  "managing_department": "portfolio_management",
+  "active_dashboard_portfolio_id": "sharia_us_growth_v1",
+  "portfolios": [
+    {
+      "portfolio_id": "sharia_us_growth_v1",
+      "display_name_ar": "محفظة النمو الأمريكية الشرعية",
+      "status": "approved_paper_portfolio",
+      "portfolio_path": "portfolios/sharia_us_growth_v1",
+      "official_dashboard": "portfolios/sharia_us_growth_v1/reports/portfolio_dashboard.html",
+      "public_compatibility_dashboard": "reports/portfolio_dashboard.html",
+      "approval_record": "corporate/board/approval_register.md"
+    }
+  ]
+}

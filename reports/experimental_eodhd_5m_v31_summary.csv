@@ -1,0 +1,4 @@
+version,portfolio_value,pnl,period_return_pct,annual_return_pct,trades,closed,open,wins,losses,win_rate,avg_win_pct,avg_loss_pct,worst_loss_pct,max_drawdown_pct,end_date
+V3.1 daily approved,190516.03,180516.03,1805.16,243.65,433,432,1,393,39,90.97,3.46,-6.44,-12.05,-6.29,2026-05-22
+V3.1 EODHD 5m same-bar trailing,43805.28,33805.28,338.05,85.66,433,432,1,393,39,90.97,2.11,-6.44,-12.05,-7.85,2026-05-22
+V3.1 EODHD 5m next-bar trailing,43631.29,33631.29,336.31,85.35,432,431,1,392,39,90.95,2.07,-6.44,-12.05,-7.89,2026-05-22

@@ -1419,15 +1419,6 @@ def render_dashboard(state: dict[str, object]) -> str:
     .risk-card {{ border:1px solid var(--line); background:#fbfcfd; border-radius:7px; padding:11px; }}
     .risk-card span {{ display:block; color:var(--muted); font-size:12px; }}
     .risk-card strong {{ display:block; margin-top:4px; font-size:20px; }}
-    .shadow-test {{ background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px; margin:16px 0; }}
-    .shadow-test .section-title {{ margin:0 0 10px; }}
-    .shadow-grid {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; }}
-    .shadow-card {{ border:1px solid var(--line); background:#fbfcfd; border-radius:7px; padding:11px; }}
-    .shadow-card span {{ display:block; color:var(--muted); font-size:12px; }}
-    .shadow-card strong {{ display:block; margin-top:4px; font-size:20px; }}
-    .shadow-card small {{ display:block; margin-top:5px; color:var(--muted); font-size:11px; }}
-    .shadow-tables {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:12px; margin-top:14px; }}
-    .shadow-tables h3 {{ margin:0 0 8px; font-size:15px; }}
     .mini-tables {{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin:14px 0; }}
     .toolbar {{ display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:10px; }}
     .tabs button, .filters button, .link-btn, .save-btn, .refresh-btn {{ border:1px solid var(--line); background:#eef3f7; color:var(--blue); padding:8px 11px; border-radius:7px; cursor:pointer; text-decoration:none; font:inherit; }}
@@ -1490,6 +1481,7 @@ def render_dashboard(state: dict[str, object]) -> str:
       </div>
       <div class="header-actions">
         <a class="link-btn" href="paper_portfolio_v2_analytics.html">التحليلات</a>
+        <a class="link-btn" href="business_intelligence_lab.html">ذكاء الأعمال</a>
         <a class="link-btn" href="strategy_v2_dashboard.html">داشبورد التشخيص</a>
       </div>
     </header>
@@ -1936,21 +1928,40 @@ def render_dashboard(state: dict[str, object]) -> str:
 def main() -> int:
     strategies, quality_gate = selected_portfolio_strategies()
     state = simulate_portfolio(strategies, quality_gate)
-    shadow_state = simulate_portfolio(strategies, quality_gate, STOP_SHADOW_CAPS_PCT)
-    shadow_summary, shadow_comparison = stop_shadow_summary(state, shadow_state)
-    state["stop_shadow_summary"] = shadow_summary
-    state["stop_shadow_comparison"] = shadow_comparison
     write_csv(TRADES_CSV, state["trades"])
     write_csv(EQUITY_CSV, state["snapshots"])
     write_csv(QUALITY_GATE_CSV, state["quality_gate"])
     write_csv(BENCHMARK_COMPARISON_CSV, comparison_rows(state["trades"]))
-    write_csv(STOP_SHADOW_SUMMARY_CSV, shadow_summary)
-    write_csv(STOP_SHADOW_TRADES_CSV, shadow_state["trades"])
-    write_csv(STOP_SHADOW_COMPARISON_CSV, shadow_comparison)
-    DASHBOARD.write_text(render_dashboard(state), encoding="utf-8")
+    from financial_diagnostics_lab import main as build_financial_diagnostics
+    from dashboard_financial_overlay_preview import (
+        apply_analytics_financial_overlay,
+        apply_dashboard_financial_overlay,
+        load_payload as load_financial_payload,
+    )
+    from business_intelligence_overlay_preview import (
+        apply_analytics_bi_overlay,
+        apply_dashboard_bi_overlay,
+    )
+
+    build_financial_diagnostics()
+    from business_intelligence_lab import build_payload as build_business_intelligence_payload
+    from business_intelligence_lab import main as build_business_intelligence
+
+    build_business_intelligence()
+    financial_payload = load_financial_payload()
+    business_payload = build_business_intelligence_payload()
+    dashboard_html = apply_dashboard_financial_overlay(render_dashboard(state), financial_payload)
+    dashboard_html = apply_dashboard_bi_overlay(dashboard_html, business_payload)
+    DASHBOARD.write_text(dashboard_html, encoding="utf-8")
     ANALYTICS_DASHBOARD.write_text(render_analytics_dashboard(state), encoding="utf-8")
+    from experimental_decision_center import main as build_decision_analytics
+
+    build_decision_analytics()
+    analytics_html = ANALYTICS_DASHBOARD.read_text(encoding="utf-8")
+    analytics_html = apply_analytics_financial_overlay(analytics_html, financial_payload)
+    analytics_html = apply_analytics_bi_overlay(analytics_html, business_payload)
+    ANALYTICS_DASHBOARD.write_text(analytics_html, encoding="utf-8")
     print(f"Portfolio value: {portfolio_value(state):.2f}")
-    print(f"Shadow stop value: {portfolio_value(shadow_state):.2f}")
     print(f"Trades: {len(state['trades'])}")
     print(f"Approved strategies: {sum(1 for row in state['quality_gate'] if row.get('approved'))}")
     print(f"Rejected strategies: {sum(1 for row in state['quality_gate'] if not row.get('approved'))}")

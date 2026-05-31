@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$DashboardUrl = "http://127.0.0.1:8782/reports/paper_portfolio_v2_dashboard.html"
+$DashboardUrl = "http://127.0.0.1:8782/reports/portfolio_dashboard.html"
 
 Set-Location $Root
 
@@ -31,7 +31,7 @@ if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
     exit 1
 }
 
-Write-Host "Starting Strategy Testing V2 dashboard..."
+Write-Host "Starting approved Strategy Testing portfolio dashboard..."
 Write-Host "Project: $Root"
 
 if (-not (Test-LocalPort 8766)) {

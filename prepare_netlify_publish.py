@@ -10,9 +10,10 @@ REPORTS = ROOT / "reports"
 PUBLISH = ROOT / "publish_dashboard"
 
 FILES = {
-    "paper_portfolio_v2_dashboard.html": "paper_portfolio_v2_dashboard.html",
-    "paper_portfolio_v2_analytics.html": "paper_portfolio_v2_analytics.html",
-    "strategy_v2_dashboard.html": "strategy_v2_dashboard.html",
+    "portfolio_dashboard.html": "portfolio_dashboard.html",
+    "portfolio_analytics.html": "portfolio_analytics.html",
+    "portfolio_business_intelligence.html": "portfolio_business_intelligence.html",
+    "portfolio_financial_diagnostics.html": "portfolio_financial_diagnostics.html",
 }
 
 
@@ -21,6 +22,8 @@ def write_text(path: Path, text: str) -> None:
 
 
 def main() -> int:
+    if PUBLISH.exists():
+        shutil.rmtree(PUBLISH)
     PUBLISH.mkdir(exist_ok=True)
     for src_name, dst_name in FILES.items():
         src = REPORTS / src_name
@@ -35,11 +38,11 @@ def main() -> int:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=paper_portfolio_v2_dashboard.html">
-  <title>V2 Dashboard</title>
+  <meta http-equiv="refresh" content="0; url=portfolio_dashboard.html">
+  <title>Official Portfolio Dashboard</title>
 </head>
 <body>
-  <a href="paper_portfolio_v2_dashboard.html">فتح الداشبورد</a>
+  <a href="portfolio_dashboard.html">فتح داشبورد المحفظة المعتمدة</a>
 </body>
 </html>
 """,
@@ -65,9 +68,25 @@ Disallow: /
         PUBLISH / "README.txt",
         """This folder is the public Netlify package.
 It intentionally contains only the rendered dashboard pages, not Python source files.
+
+Approved default dashboard:
+portfolio_dashboard.html
+
+Approved investment engine:
+V3.1 Hybrid
+
+Approved market data source:
+EODHD EOD-IntraDay All World, five-minute regular-session bars.
+
+Execution model:
+Raised trailing stops apply beginning with the next five-minute bar.
+
+Comparison pages are kept in the reports folder only and are not published here.
+
 Run this after every local dashboard refresh:
 
-python paper_portfolio_v2.py
+python portfolio.py
+python build_dashboard.py
 python prepare_netlify_publish.py
 
 Then deploy this folder to Netlify:

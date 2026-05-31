@@ -1,2 +1,18 @@
 # Local Netlify folder
 .netlify
+
+# Paid provider credentials and downloaded market data stay local
+.env
+data/eodhd_private/
+
+# Generated Python cache
+__pycache__/
+*.pyc
+
+# Portfolio-organized report copies are regenerated from official reports
+portfolios/*/reports/
+portfolios/*/status/
+portfolios/*/config/runtime_config_snapshot.json
+
+# Generated compact management briefings
+departments/*/briefings/current_brief.json

@@ -1,0 +1,4 @@
+annual_return_pct,avg_loss_pct,avg_win_pct,closed,delta_vs_best,end_date,losses,max_drawdown_pct,open,period_return_pct,pnl,portfolio_value,trades,version,win_rate,wins,worst_loss_pct
+157.18,-6.28,2.91,718,0.0,2026-05-22,55,-9.81,2,16089.63,1608963.29,1618963.29,720,V2,92.34,663,-16.12
+150.57,-6.44,3.16,733,-211748.22,2026-05-22,57,-15.68,0,13972.15,1397215.07,1407215.07,733,V3 Raw Rebuild,92.22,676,-15.67
+104.39,-5.29,2.95,762,-1149195.96,2026-05-22,89,-10.75,2,4597.67,459767.33,469767.33,764,V3.1 Hybrid,88.32,673,-15.67

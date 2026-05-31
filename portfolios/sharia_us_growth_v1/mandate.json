@@ -1,0 +1,28 @@
+{
+  "portfolio_id": "sharia_us_growth_v1",
+  "display_name_ar": "محفظة النمو الأمريكية الشرعية",
+  "managing_department": "portfolio_management",
+  "status": "approved_paper_portfolio",
+  "market": "US equities",
+  "investment_constraint_ar": "اسهم امريكية شرعية ضمن الكون المعتمد",
+  "official_display_start_date": "2021-01-01",
+  "initial_capital_usd": 10000.0,
+  "timeframes": [
+    "swing",
+    "monthly"
+  ],
+  "universe": [
+    "AMD",
+    "ANET",
+    "AVGO",
+    "LRCX",
+    "MRVL",
+    "NVDA",
+    "PANW",
+    "SHOP",
+    "TSLA"
+  ],
+  "methodology": "diagnose_then_design",
+  "approved_strategy_family": "V3.1 Hybrid",
+  "disclosure_ar": "محفظة ورقية مبنية على محاكاة تاريخية وليست تنفيذ تداول حقيقي او ضمانا لعائد مستقبلي."
+}
