@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31 02:24",
+  "generated_at": "2026-05-31 06:37",
   "source_files": {
     "trades": "reports/portfolio_trades.csv",
     "market_data": "data/market_data"
