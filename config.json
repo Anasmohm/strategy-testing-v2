@@ -4,7 +4,7 @@
   "active_portfolio_id": "sharia_us_growth_v1",
   "portfolio_display_name_ar": "محفظة النمو الأمريكية الشرعية",
   "start_date": "2021-01-01",
-  "initial_capital": 10000.0,
+  "initial_capital": 30000.0,
   "position_cap_pct": 0.4,
   "active_timeframes": [
     "swing",
