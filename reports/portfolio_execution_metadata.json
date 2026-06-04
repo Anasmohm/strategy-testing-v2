@@ -3,7 +3,7 @@
   "market_data_interval": "5m",
   "execution_model": "five_minute_target_stop_daily_high_next_session_trailing",
   "execution_diagnostics": {
-    "intraday_exit_trades": 767,
+    "intraday_exit_trades": 768,
     "same_bar_stop_target_ambiguities": 12,
     "daily_fallback_sessions": 0,
     "next_session_stop_raises": 598
@@ -14,20 +14,20 @@
   "conservative_evaluation_period_start": "2022-01-01",
   "portfolio_summary": {
     "version": "V3.1 approved / daily-high next-session trailing",
-    "portfolio_value": 1471846.35,
-    "pnl": 1441846.35,
-    "period_return_pct": 4806.15,
-    "annual_return_pct": 105.21,
-    "trades": 769,
-    "closed": 768,
+    "portfolio_value": 1476320.79,
+    "pnl": 1446320.79,
+    "period_return_pct": 4821.07,
+    "annual_return_pct": 105.25,
+    "trades": 770,
+    "closed": 769,
     "open": 1,
-    "wins": 679,
+    "wins": 680,
     "losses": 89,
-    "win_rate": 88.41,
+    "win_rate": 88.43,
     "avg_win_pct": 2.96,
     "avg_loss_pct": -5.29,
     "worst_loss_pct": -15.67,
     "max_drawdown_pct": -10.81,
-    "end_date": "2026-06-02"
+    "end_date": "2026-06-03"
   }
 }
