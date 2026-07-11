@@ -14,10 +14,10 @@
   "conservative_evaluation_period_start": "2022-01-01",
   "portfolio_summary": {
     "version": "V3.1 approved / daily-high next-session trailing",
-    "portfolio_value": 1519338.59,
-    "pnl": 1489338.59,
-    "period_return_pct": 4964.46,
-    "annual_return_pct": 103.69,
+    "portfolio_value": 1514453.75,
+    "pnl": 1484453.75,
+    "period_return_pct": 4948.18,
+    "annual_return_pct": 103.5,
     "trades": 782,
     "closed": 781,
     "open": 1,
@@ -28,6 +28,6 @@
     "avg_loss_pct": -5.38,
     "worst_loss_pct": -15.67,
     "max_drawdown_pct": -10.81,
-    "end_date": "2026-07-09"
+    "end_date": "2026-07-10"
   }
 }
