@@ -2221,3 +2221,25 @@ Organized portfolio workspace: /home/runner/work/strategy-testing-v2/strategy-te
 [2026-07-23 05:36:37] running prepare GitHub Pages: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/prepare_github_pages.py
 [2026-07-23 05:36:37] Prepared GitHub Pages folder: /home/runner/work/strategy-testing-v2/strategy-testing-v2/publish_dashboard
 [2026-07-23 05:36:37] finished approved V3.1 GitHub Pages update
+[2026-07-24 05:29:17] starting approved V3.1 GitHub Pages update
+[2026-07-24 05:31:07] EODHD refresh unavailable; rebuilding from existing cached 5m data: EODHD refresh requires session repair:
+AMD: EODHD 5m has incomplete regular sessions for AMD; build halted.
+AVGO: EODHD 5m has incomplete regular sessions for AVGO; build halted.
+LRCX: EODHD 5m has incomplete regular sessions for LRCX; build halted.
+NVDA: EODHD 5m has incomplete regular sessions for NVDA; build halted.
+PANW: EODHD 5m has incomplete regular sessions for PANW; build halted.
+SHOP: EODHD 5m has incomplete regular sessions for SHOP; build halted.
+TSLA: EODHD 5m has incomplete regular sessions for TSLA; build halted.
+SPY: EODHD 5m has incomplete regular sessions for SPY; build halted.
+SOXX: EODHD 5m has incomplete regular sessions for SOXX; build halted.
+[2026-07-24 05:31:07] running build approved V3.1 dashboard: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/paper_portfolio_v31.py
+[2026-07-24 05:32:15] Decision analytics: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/portfolio_analytics.html
+V3.1 strategies: 17
+V3.1 value: 1596313.08
+Official dashboard: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/portfolio_dashboard.html
+Official analytics: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/portfolio_analytics.html
+Simulation: /home/runner/work/strategy-testing-v2/strategy-testing-v2/reports/paper_portfolio_v31_simulation.html
+Organized portfolio workspace: /home/runner/work/strategy-testing-v2/strategy-testing-v2/portfolios/sharia_us_growth_v1
+[2026-07-24 05:32:15] running prepare GitHub Pages: /opt/hostedtoolcache/Python/3.12.13/x64/bin/python /home/runner/work/strategy-testing-v2/strategy-testing-v2/prepare_github_pages.py
+[2026-07-24 05:32:15] Prepared GitHub Pages folder: /home/runner/work/strategy-testing-v2/strategy-testing-v2/publish_dashboard
+[2026-07-24 05:32:15] finished approved V3.1 GitHub Pages update
