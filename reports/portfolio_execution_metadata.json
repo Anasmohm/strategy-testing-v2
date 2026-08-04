@@ -17,10 +17,10 @@
     "portfolio_value": 1699428.92,
     "pnl": 1669428.92,
     "period_return_pct": 5564.76,
-    "annual_return_pct": 106.23,
-    "trades": 788,
+    "annual_return_pct": 106.01,
+    "trades": 790,
     "closed": 788,
-    "open": 0,
+    "open": 2,
     "wins": 696,
     "losses": 92,
     "win_rate": 88.32,
@@ -28,6 +28,6 @@
     "avg_loss_pct": -5.38,
     "worst_loss_pct": -15.67,
     "max_drawdown_pct": -10.81,
-    "end_date": "2026-07-31"
+    "end_date": "2026-08-03"
   }
 }
