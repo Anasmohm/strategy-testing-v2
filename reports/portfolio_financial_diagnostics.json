@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14 04:20",
+  "generated_at": "2026-08-15 03:05",
   "source_files": {
     "trades": "reports/portfolio_trades.csv",
     "market_data": "data/market_data"
@@ -31,16 +31,16 @@
     },
     {
       "ticker": "QQQ",
-      "date": "2026-08-13",
-      "close": 732.07,
+      "date": "2026-08-14",
+      "close": 731.07,
       "trend": "صاعد قوي",
-      "ret20": 5.28,
-      "ret50": -1.63,
-      "vol20_ann": 24.59,
-      "sharpe63": 0.5,
+      "ret20": 5.03,
+      "ret50": -1.29,
+      "vol20_ann": 23.8,
+      "sharpe63": 0.37,
       "var60_95": -2.0,
-      "technical_score": 75.99,
-      "score_label": "داعم قوي"
+      "technical_score": 70.12,
+      "score_label": "داعم"
     },
     {
       "ticker": "SOXX",
@@ -57,6 +57,38 @@
     }
   ],
   "tickers": [
+    {
+      "ticker": "ANET",
+      "date": "2026-08-14",
+      "close": 198.82,
+      "trend": "صاعد قوي",
+      "trend_score": 5,
+      "rsi14": 64.88,
+      "rsi_zone": "زخم مرتفع",
+      "ma20": 183.76,
+      "ma50": 173.89,
+      "ma200": 148.26,
+      "vol20_ann": 58.2,
+      "atr14_pct": 5.76,
+      "var60_95": -5.89,
+      "sharpe63": 2.28,
+      "support20": 156.84,
+      "resistance20": 214.89,
+      "support_gap_pct": 21.11,
+      "resistance_gap_pct": 8.08,
+      "location": "منتصف النطاق",
+      "risk": "مرتفع",
+      "market_alignment": "أقوى من السوق",
+      "technical_score": 100.0,
+      "score_label": "داعم قوي",
+      "trades": 84,
+      "closed": 84,
+      "wins": 70,
+      "losses": 14,
+      "win_rate": 83.33,
+      "pnl": 274781.67,
+      "avg_pct": 2.02
+    },
     {
       "ticker": "AVGO",
       "date": "2026-05-28",
@@ -120,38 +152,6 @@
       "win_rate": 87.67,
       "pnl": 173349.9,
       "avg_pct": 1.61
-    },
-    {
-      "ticker": "ANET",
-      "date": "2026-08-13",
-      "close": 203.62,
-      "trend": "صاعد قوي",
-      "trend_score": 5,
-      "rsi14": 65.98,
-      "rsi_zone": "زخم مرتفع",
-      "ma20": 182.25,
-      "ma50": 173.4,
-      "ma200": 148.05,
-      "vol20_ann": 57.04,
-      "atr14_pct": 5.76,
-      "var60_95": -5.89,
-      "sharpe63": 2.76,
-      "support20": 156.84,
-      "resistance20": 214.89,
-      "support_gap_pct": 22.97,
-      "resistance_gap_pct": 5.53,
-      "location": "منتصف النطاق",
-      "risk": "مرتفع",
-      "market_alignment": "أقوى من السوق",
-      "technical_score": 95.0,
-      "score_label": "داعم قوي",
-      "trades": 84,
-      "closed": 84,
-      "wins": 70,
-      "losses": 14,
-      "win_rate": 83.33,
-      "pnl": 274781.67,
-      "avg_pct": 2.02
     },
     {
       "ticker": "NVDA",
@@ -283,27 +283,27 @@
     },
     {
       "ticker": "MRVL",
-      "date": "2026-08-13",
-      "close": 222.18,
+      "date": "2026-08-14",
+      "close": 222.02,
       "trend": "صاعد",
       "trend_score": 3,
-      "rsi14": 61.09,
+      "rsi14": 63.56,
       "rsi_zone": "زخم مرتفع",
-      "ma20": 200.84,
-      "ma50": 239.69,
-      "ma200": 140.78,
-      "vol20_ann": 88.46,
-      "atr14_pct": 7.79,
+      "ma20": 202.51,
+      "ma50": 238.1,
+      "ma200": 141.45,
+      "vol20_ann": 88.5,
+      "atr14_pct": 7.42,
       "var60_95": -9.38,
-      "sharpe63": 1.31,
+      "sharpe63": 1.22,
       "support20": 162.9,
       "resistance20": 231.38,
-      "support_gap_pct": 26.68,
-      "resistance_gap_pct": 4.14,
+      "support_gap_pct": 26.63,
+      "resistance_gap_pct": 4.22,
       "location": "منتصف النطاق",
       "risk": "مرتفع",
       "market_alignment": "أقوى من السوق",
-      "technical_score": 72.41,
+      "technical_score": 71.8,
       "score_label": "داعم",
       "trades": 141,
       "closed": 141,
@@ -871,7 +871,7 @@
       "entry_technical_score": 66.53,
       "latest_trend": "صاعد",
       "latest_risk": "مرتفع",
-      "latest_score": 72.41
+      "latest_score": 71.8
     },
     {
       "avg_dollar_volume": "559002539.5",
@@ -922,7 +922,7 @@
       "entry_technical_score": 75.67,
       "latest_trend": "صاعد",
       "latest_risk": "مرتفع",
-      "latest_score": 72.41
+      "latest_score": 71.8
     },
     {
       "avg_dollar_volume": "13203420350.23",
@@ -1024,7 +1024,7 @@
       "entry_technical_score": 70.94,
       "latest_trend": "صاعد قوي",
       "latest_risk": "مرتفع",
-      "latest_score": 95.0
+      "latest_score": 100.0
     },
     {
       "avg_dollar_volume": "4545348453.81",
@@ -1177,7 +1177,7 @@
       "entry_technical_score": 80.0,
       "latest_trend": "صاعد",
       "latest_risk": "مرتفع",
-      "latest_score": 72.41
+      "latest_score": 71.8
     },
     {
       "avg_dollar_volume": "24627247265.33",
@@ -1432,7 +1432,7 @@
       "entry_technical_score": 69.28,
       "latest_trend": "صاعد",
       "latest_risk": "مرتفع",
-      "latest_score": 72.41
+      "latest_score": 71.8
     },
     {
       "avg_dollar_volume": "13308899190.07",
@@ -1687,7 +1687,7 @@
       "entry_technical_score": 64.11,
       "latest_trend": "صاعد قوي",
       "latest_risk": "مرتفع",
-      "latest_score": 95.0
+      "latest_score": 100.0
     },
     {
       "avg_dollar_volume": "4296588652.81",
@@ -1789,7 +1789,7 @@
       "entry_technical_score": 72.17,
       "latest_trend": "صاعد قوي",
       "latest_risk": "مرتفع",
-      "latest_score": 95.0
+      "latest_score": 100.0
     },
     {
       "avg_dollar_volume": "604193501.39",
@@ -1840,7 +1840,7 @@
       "entry_technical_score": 69.36,
       "latest_trend": "صاعد قوي",
       "latest_risk": "مرتفع",
-      "latest_score": 95.0
+      "latest_score": 100.0
     },
     {
       "avg_dollar_volume": "707280881.19",
@@ -1891,7 +1891,7 @@
       "entry_technical_score": 79.42,
       "latest_trend": "صاعد قوي",
       "latest_risk": "مرتفع",
-      "latest_score": 95.0
+      "latest_score": 100.0
     },
     {
       "avg_dollar_volume": "2157973316.61",
@@ -1942,7 +1942,7 @@
       "entry_technical_score": 68.64,
       "latest_trend": "صاعد قوي",
       "latest_risk": "مرتفع",
-      "latest_score": 95.0
+      "latest_score": 100.0
     },
     {
       "avg_dollar_volume": "3164509387.03",
@@ -2044,7 +2044,7 @@
       "entry_technical_score": 75.63,
       "latest_trend": "صاعد قوي",
       "latest_risk": "مرتفع",
-      "latest_score": 95.0
+      "latest_score": 100.0
     }
   ]
 }
