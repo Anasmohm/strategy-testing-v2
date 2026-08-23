@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22 03:08",
+  "generated_at": "2026-08-23 03:16",
   "source_files": {
     "trades": "reports/portfolio_trades.csv",
     "market_data": "data/market_data"
@@ -13,7 +13,7 @@
     "win_rate": 88.35,
     "avg_pct": 2.02,
     "worst_pct": -15.67,
-    "total_pnl": 1721088.74
+    "total_pnl": 1682112.44
   },
   "market": [
     {
@@ -278,7 +278,7 @@
       "wins": 122,
       "losses": 19,
       "win_rate": 86.52,
-      "pnl": 445442.45,
+      "pnl": 406466.15,
       "avg_pct": 1.78
     },
     {
@@ -355,7 +355,7 @@
         "wins": 404,
         "losses": 40,
         "win_rate": 90.99,
-        "pnl": 990325.1,
+        "pnl": 951348.8,
         "avg_pct": 2.06,
         "median_pct": 2.5,
         "best_pct": 10.0,
@@ -416,19 +416,6 @@
         "worst_pct": -10.79
       },
       {
-        "name": "تشبع شراء",
-        "trades": 239,
-        "closed": 238,
-        "wins": 217,
-        "losses": 21,
-        "win_rate": 91.18,
-        "pnl": 374907.19,
-        "avg_pct": 2.01,
-        "median_pct": 3.0,
-        "best_pct": 10.0,
-        "worst_pct": -12.31
-      },
-      {
         "name": "متوازن",
         "trades": 145,
         "closed": 145,
@@ -453,6 +440,19 @@
         "median_pct": 2.0,
         "best_pct": 8.0,
         "worst_pct": -12.38
+      },
+      {
+        "name": "تشبع شراء",
+        "trades": 239,
+        "closed": 238,
+        "wins": 217,
+        "losses": 21,
+        "win_rate": 91.18,
+        "pnl": 335930.89,
+        "avg_pct": 2.01,
+        "median_pct": 3.0,
+        "best_pct": 10.0,
+        "worst_pct": -12.31
       },
       {
         "name": "تشبع بيع",
@@ -489,7 +489,7 @@
         "wins": 179,
         "losses": 16,
         "win_rate": 91.79,
-        "pnl": 627889.53,
+        "pnl": 588913.23,
         "avg_pct": 2.29,
         "median_pct": 3.0,
         "best_pct": 10.0,
@@ -530,7 +530,7 @@
         "wins": 243,
         "losses": 18,
         "win_rate": 93.1,
-        "pnl": 386168.91,
+        "pnl": 347192.61,
         "avg_pct": 1.99,
         "median_pct": 2.5,
         "best_pct": 9.0,
@@ -558,7 +558,7 @@
         "wins": 334,
         "losses": 28,
         "win_rate": 92.27,
-        "pnl": 842745.02,
+        "pnl": 803768.72,
         "avg_pct": 2.02,
         "median_pct": 2.5,
         "best_pct": 10.0,
@@ -833,14 +833,14 @@
       "entry_price": "251.01",
       "entry_rule": "قاعدة اختراق",
       "exit_price": "261.0504",
-      "held_sessions": "0",
-      "highest_price": "251.01",
+      "held_sessions": "1",
+      "highest_price": "252.52",
       "hold_days": "8",
       "id": "V31-0791",
       "initial_stop_price": "216.3247",
-      "latest_price": "251.01",
+      "latest_price": "237.04",
       "liquidity_cap": "43028645.27",
-      "market_value": "700317.88",
+      "market_value": "661341.58",
       "outcome": "OPEN",
       "realized_pnl": "0.0",
       "realized_pnl_pct": "0.0",
@@ -848,16 +848,16 @@
       "shares": 2790,
       "status": "OPEN",
       "stop_cap_pct": "",
-      "stop_price": "216.3247",
+      "stop_price": "252.265",
       "strategy_id": "MRVL_swing_breakout_approved",
       "strategy_source": "معتمد",
       "technical_initial_stop_price": "216.3247",
       "ticker": "MRVL",
       "timeframe": "swing",
-      "unrealized_pnl": "0.0",
-      "unrealized_pnl_pct": "-0.0",
-      "pnl": 0.0,
-      "pnl_pct": 0.0,
+      "unrealized_pnl": "-38976.3",
+      "unrealized_pnl_pct": "-5.57",
+      "pnl": -38976.3,
+      "pnl_pct": -5.57,
       "entry_trend": "صاعد قوي",
       "entry_rsi_zone": "تشبع شراء",
       "entry_volatility": "تذبذب عال",
