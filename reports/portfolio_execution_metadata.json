@@ -6,7 +6,7 @@
     "intraday_exit_trades": 804,
     "same_bar_stop_target_ambiguities": 13,
     "daily_fallback_sessions": 0,
-    "next_session_stop_raises": 618
+    "next_session_stop_raises": 619
   },
   "trailing_stop_step_pct": 0.5,
   "trailing_stop_update_timing": "completed_daily_high_next_session",
@@ -14,10 +14,10 @@
   "conservative_evaluation_period_start": "2022-01-01",
   "portfolio_summary": {
     "version": "V3.1 approved / daily-high next-session trailing",
-    "portfolio_value": 1690218.41,
-    "pnl": 1660218.41,
-    "period_return_pct": 5534.06,
-    "annual_return_pct": 102.15,
+    "portfolio_value": 1691689.78,
+    "pnl": 1661689.78,
+    "period_return_pct": 5538.97,
+    "annual_return_pct": 102.12,
     "trades": 806,
     "closed": 805,
     "open": 1,
@@ -28,6 +28,6 @@
     "avg_loss_pct": -5.55,
     "worst_loss_pct": -15.67,
     "max_drawdown_pct": -10.81,
-    "end_date": "2026-09-24"
+    "end_date": "2026-09-25"
   }
 }
